@@ -1,0 +1,20 @@
+# backups / scratch / temp
+backup/
+scratch/
+scratchpad/
+tmp/
+temp/
+.tmp/
+# OS
+.DS_Store
+Thumbs.db
+# deps / env
+node_modules/
+.env*
+# testing screenshots
+screenshot*.png
+screenshots/
+# unversioned working files (not deployed; a copy of the hero video lives in deploy/uploads/)
+/uploads/
+/.thumbnail
+/.thumbnail/

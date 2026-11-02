@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<title>House Cleaners in Llanelli &amp; South-West Wales | Pink's Home</title>
+<meta name="description" content="Local, insured house cleaning across Carmarthenshire, Swansea and Pembrokeshire. Regular, deep and end of tenancy cleans from £25/hr. Free quotes.">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&amp;family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&amp;display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F0E8DF;color:#003A55;font-family:'Nunito Sans',sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#003A55}
+a:hover{color:#003A55;opacity:.8}
+input,select,textarea,button{font-family:inherit}
+</style>
+</helmet>
+
+<div style="background:#F0E8DF;color:#003A55;font-family:'Nunito Sans',sans-serif;font-size:17px;line-height:1.55;overflow-x:hidden">
+
+<!-- HEADER -->
+<header data-screen-label="Header" style="position:sticky;top:0;z-index:50;background:#F0E8DF;border-bottom:2px solid #003A55">
+  <div style="max-width:1320px;margin:0 auto;padding:8px clamp(16px,3vw,32px);display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="#" aria-label="Pink's Home" style="display:block;flex:none;width:clamp(170px,20vw,250px);height:clamp(44px,5vw,60px);padding:2px 0">
+      <img src="assets/pinks-home-services-logo.png" alt="Pink's Home Services" style="display:block;width:100%;height:100%;object-fit:contain;object-position:left center">
+    </a>
+    <div style="display:flex;align-items:center;justify-content:flex-end;gap:clamp(18px,2.4vw,32px);font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:15px;letter-spacing:.03em">
+      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <nav style="display:flex;gap:clamp(18px,2.2vw,28px)">
+          <a href="#services" style="text-decoration:none">Services</a>
+          <a href="Areas.dc.html" style="text-decoration:none">Areas</a>
+          <a href="#prices" style="text-decoration:none">Prices</a>
+          <a href="#about" style="text-decoration:none">About</a>
+          <a href="#reviews" style="text-decoration:none">Reviews</a>
+        </nav>
+        <div style="display:flex;align-items:center;gap:10px">
+          <a href="tel:07902769352" aria-label="Call Pink's Home on 07902 769352" style="width: 44px; height: 44px; border-radius: 999px; border: 2px solid #003A55; display: flex; align-items: center; justify-content: center; flex: none; border-width: 1px" style-hover="background:#F7A8A8;opacity:1"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#003A55" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A18 18 0 0 1 3 5a2 2 0 0 1 2-2z"></path></svg></a>
+          <a href="#quote" style="background: #F7A8A8; color: #003A55; text-decoration: none; border-radius: 999px; padding: 11px 20px; white-space: nowrap; font-size: 14px; border: 2px solid #003A55; border-width: 1px" style-hover="background:#003A55;color:#F7A8A8;opacity:1">Get a quote!</a>
+        </div>
+      </sc-if>
+      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;align-items:center;gap:10px">
+          <a href="tel:07902769352" aria-label="Call Pink's Home on 07902 769352" style="width:44px;height:44px;border-radius:999px;border:2px solid #003A55;display:flex;align-items:center;justify-content:center;flex:none" style-hover="background:#F7A8A8;opacity:1"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#003A55" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A18 18 0 0 1 3 5a2 2 0 0 1 2-2z"></path></svg></a>
+          <button onClick="{{ toggleMenu }}" aria-label="Menu" style="width:44px;height:44px;border-radius:999px;border:2px solid #003A55;background:transparent;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer;padding:0">
+            <span style="display:block;width:20px;height:2px;background:#003A55"></span>
+            <span style="display:block;width:20px;height:2px;background:#003A55"></span>
+            <span style="display:block;width:20px;height:2px;background:#003A55"></span>
+          </button>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+  <sc-if value="{{ menuVisible }}" hint-placeholder-val="{{ false }}">
+    <div style="border-top:2px solid #003A55;padding:8px 20px 24px;display:flex;flex-direction:column">
+      <nav style="display:flex;flex-direction:column;font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:18px">
+        <a href="#services" onClick="{{ closeMenu }}" style="text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(0,58,85,.2)">Services</a>
+        <a href="Areas.dc.html" onClick="{{ closeMenu }}" style="text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(0,58,85,.2)">Areas</a>
+        <a href="#prices" onClick="{{ closeMenu }}" style="text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(0,58,85,.2)">Prices</a>
+        <a href="#about" onClick="{{ closeMenu }}" style="text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(0,58,85,.2)">About</a>
+        <a href="#reviews" onClick="{{ closeMenu }}" style="text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(0,58,85,.2)">Reviews</a>
+      </nav>
+      <a href="#quote" onClick="{{ closeMenu }}" style="margin-top:20px;display:block;text-align:center;background:#F7A8A8;color:#003A55;text-decoration:none;border-radius:999px;padding:15px 20px;border:2px solid #003A55;font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:16px;letter-spacing:.03em">Get a quote!</a>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px 28px;margin-top:16px;font-weight:800;font-size:16px">
+        <a href="tel:07902769352" style="display:flex;align-items:center;min-height:44px">Call 07902 769352</a>
+        <a href="https://wa.me/447902769352" style="display:flex;align-items:center;min-height:44px">WhatsApp us</a>
+      </div>
+    </div>
+  </sc-if>
+</header>
+
+<!-- HERO -->
+<section data-screen-label="Hero" style="position:relative;min-height:min(88vh,820px);display:flex;align-items:center;overflow:hidden;background:#003A55">
+  <video ref="{{ videoRef }}" src="uploads/container01.mp4" autoPlay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>
+  <div style="position: absolute; inset: 0"></div>
+  <div style="position:relative;max-width:1320px;width:100%;margin:0 auto;padding:clamp(56px,9vw,120px) clamp(20px,4vw,48px)">
+    <div style="max-width:780px;color:#F0E8DF">
+      <p style="margin:0 0 18px;font-family:'Titan One',sans-serif;font-size:20px;color:#F7A8A8;letter-spacing:.04em">Croeso! South-West Wales</p>
+      <h1 style="margin:0;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(38px,6.4vw,80px);line-height:1.04;letter-spacing:.01em;text-wrap:balance;text-shadow:0 2px 12px rgba(0,30,45,.45)">Big cleaning jobs, <span style="display:inline-block;background:#F7A8A8;color:#003A55;padding:0 .18em;border-radius:10px;transform:rotate(-3deg);margin-top:.08em">handled.</span></h1>
+      <p style="margin:26px 0 0;font-size:clamp(17px,1.6vw,20px);max-width:600px;text-wrap:pretty;text-shadow:0 2px 12px rgba(0,30,45,.45)">Deep cleans, end of tenancy, after-builders, holiday let cleaning and mould treatment across Carmarthenshire, Swansea and Pembrokeshire.&nbsp;</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:34px">
+        <a href="#quote" style="background:#F7A8A8;color:#003A55;text-decoration:none;border-radius:999px;padding:16px 28px;font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:16px;letter-spacing:.03em" style-hover="background:#F0E8DF;color:#003A55;opacity:1">Get a quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAND -->
+<section data-screen-label="Trust band" style="padding:clamp(48px,7vw,88px) clamp(20px,4vw,48px);border-bottom:2px solid #003A55">
+  <div style="max-width:1200px;margin:0 auto;text-align:center">
+    <h2 style="margin:0 0 clamp(28px,4vw,44px);font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(26px,3.4vw,40px);line-height:1.1;text-wrap:balance">A local team West Wales <span style="display:inline-block;background:#F7A8A8;padding:0 .18em;border-radius:10px;transform:rotate(-2deg)">trusts</span></h2>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:24px clamp(28px,4vw,56px)">
+      <div style="display:flex;align-items:center;gap:14px"><svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#003A55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M10 12h28v28H10z"></path><path d="M10 19h28M17 8v8M31 8v8"></path><circle cx="24" cy="30" r="6" fill="#F7A8A8"></circle><path d="M24 27v3l2 1.5" stroke-width="1.6"></path></svg><span style="font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:17px;letter-spacing:.02em;line-height:1.2">5 years serving West Wales</span></div>
+      <div style="display:flex;align-items:center;gap:14px"><svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#003A55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M24 5l16 6v12c0 10-7 17-16 21C15 40 8 33 8 23V11z"></path><path d="M24 10l11 4v9c0 7-5 12-11 15" stroke-width="1"></path><path d="M17 24l5 5 9-10" stroke="#003A55" stroke-width="2.6"></path><circle cx="38" cy="10" r="3.5" fill="#F7A8A8" stroke="none"></circle></svg><span style="font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:17px;letter-spacing:.02em;line-height:1.2">Fully insured</span></div>
+      <div style="display:flex;align-items:center;gap:14px"><svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#003A55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><rect x="6" y="11" width="36" height="26" rx="3"></rect><circle cx="17" cy="22" r="4.5" fill="#F7A8A8"></circle><path d="M10 32c1-4 4-6 7-6s6 2 7 6"></path><path d="M28 19h9M28 24h9M28 29h6" stroke-width="1.6"></path></svg><span style="font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:17px;letter-spacing:.02em;line-height:1.2">DBS-checked cleaners</span></div>
+      <div style="display:flex;align-items:center;gap:14px"><svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#003A55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M6 10h22v16H16l-6 5v-5H6z" fill="#F7A8A8"></path><path d="M20 30v4h12l6 5v-5h4V18h-10"></path><path d="M11 16h12M11 20h8" stroke-width="1.6"></path></svg><span style="font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:17px;letter-spacing:.02em;line-height:1.2">Welsh &amp; English spoken</span></div>
+    </div>
+    <p style="margin:clamp(28px,4vw,40px) auto 0;max-width:620px;font-size:16px;text-wrap:pretty">Look out for our flyers in shops around Llanelli, Carmarthen and the coast.</p>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section data-screen-label="Why us" style="padding:clamp(64px,9vw,120px) clamp(20px,4vw,48px)">
+  <div style="max-width:1100px;margin:0 auto">
+    <h2 style="margin:0 0 clamp(40px,6vw,72px);font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(32px,4.6vw,56px);line-height:1.08;text-align:center;text-wrap:balance">Why West Wales homes <span style="display:inline-block;background:#F7A8A8;padding:0 .18em;border-radius:10px;transform:rotate(2deg)">stick</span> with us</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));border-top:2px solid #003A55">
+      <div style="display:flex;gap:24px;padding:36px 8px;border-bottom:2px solid #003A55;align-items:flex-start">
+        <svg width="72" height="72" viewBox="0 0 64 64" fill="none" stroke="#003A55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><rect x="18" y="6" width="28" height="52" rx="5"></rect><path d="M28 11h8"></path><rect x="22" y="16" width="20" height="30" rx="1"></rect><path d="M22 40l6-7 5 5 3-3 6 5"></path><circle cx="36" cy="23" r="2.5"></circle><circle cx="32" cy="52" r="2"></circle><path d="M46 14l4 2M46 22l6 1M46 30l6 0M46 38l6-1M46 46l4-2" stroke-width="1"></path><path d="M10 24c-2 4-2 12 0 16M5 20c-3 7-3 17 0 24" stroke-width="1.4"></path></svg>
+        <div><h3 style="margin:0 0 8px;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:22px;letter-spacing:.02em">Priced from a photo</h3><p style="margin:0;text-wrap:pretty">Send us a few pictures on WhatsApp and we’ll reply with a price within one working day. No home visit needed for most jobs.</p></div>
+      </div>
+      <div style="display:flex;gap:24px;padding:36px 8px;border-bottom:2px solid #003A55;align-items:flex-start">
+        <svg width="72" height="72" viewBox="0 0 64 64" fill="none" stroke="#003A55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M32 5l22 8v16c0 14-9 24-22 30C19 53 10 43 10 29V13z"></path><path d="M32 11l16 6v12c0 10-6 18-16 23" stroke-width="1"></path><path d="M38 20v26M42 22v20M46 24v12" stroke-width="1"></path><path d="M21 31l7 7 13-14" stroke-width="2.6"></path></svg>
+        <div><h3 style="margin:0 0 8px;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:22px;letter-spacing:.02em">Checked and covered</h3><p style="margin:0;text-wrap:pretty">Every cleaner is DBS-checked and covered by our public liability insurance with [INSURER]. Ask and we’ll send the certificate.</p></div>
+      </div>
+      <div style="display:flex;gap:24px;padding:36px 8px;border-bottom:2px solid #003A55;align-items:flex-start">
+        <svg width="72" height="72" viewBox="0 0 64 64" fill="none" stroke="#003A55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><circle cx="32" cy="35" r="23"></circle><circle cx="32" cy="35" r="18" stroke-width="1"></circle><path d="M26 6h12M32 6v6M50 13l4 4"></path><path d="M32 35V22M32 35l9 6" stroke-width="2.6"></path><path d="M32 19v2M32 49v2M16 35h2M46 35h2" stroke-width="1.6"></path><path d="M14 44c3 6 8 10 14 12M12 38c1 3 2 5 3 7" stroke-width="1"></path></svg>
+        <div><h3 style="margin:0 0 8px;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:22px;letter-spacing:.02em">A time you can plan around</h3><p style="margin:0;text-wrap:pretty">We give you a set arrival time window and let you know by text when we’re on our way. If we’re running late, you’ll hear it from us first.</p></div>
+      </div>
+      <div style="display:flex;gap:24px;padding:36px 8px;border-bottom:2px solid #003A55;align-items:flex-start">
+        <svg width="72" height="72" viewBox="0 0 64 64" fill="none" stroke="#003A55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M6 30L32 8l26 22"></path><path d="M12 26v30h40V26"></path><path d="M44 12h6v10"></path><path d="M32 46c-8-5-11-9-11-13a5 5 0 0 1 11-2 5 5 0 0 1 11 2c0 4-3 8-11 13z"></path><path d="M16 50h32M16 53h32" stroke-width="1"></path><path d="M15 30v16M18 30v16" stroke-width="1"></path></svg>
+        <div><h3 style="margin:0 0 8px;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:22px;letter-spacing:.02em">Not happy? We’ll come back</h3><p style="margin:0;text-wrap:pretty">If something’s been missed, tell us within 48 hours and we’ll return to sort it at no charge.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RECENT JOBS -->
+<section data-screen-label="Recent jobs" style="padding:0 0 clamp(64px,9vw,120px)">
+  <div style="max-width:1100px;margin:0 auto;padding:0 clamp(20px,4vw,48px);text-align:center">
+    <h2 style="margin:0 0 28px;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(32px,4.6vw,56px);line-height:1.08">Fresh from the <span style="display:inline-block;background:#F7A8A8;padding:0 .18em;border-radius:10px;transform:rotate(-2deg)">job</span></h2>
+    <div style="display:inline-flex;gap:10px;flex-wrap:wrap;justify-content:center">
+      <button onClick="{{ showHomes }}" style="border:2px solid #003A55;background:{{ homesBg }};color:{{ homesFg }};border-radius:999px;padding:12px 26px;font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:15px;letter-spacing:.03em;cursor:pointer">Homes</button>
+      <button onClick="{{ showLets }}" style="border:2px solid #003A55;background:{{ letsBg }};color:{{ letsFg }};border-radius:999px;padding:12px 26px;font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:15px;letter-spacing:.03em;cursor:pointer">Holiday lets</button>
+    </div>
+    <p style="margin:20px auto 0;max-width:560px;text-wrap:pretty">Real photos from real homes we’ve cleaned around Carmarthenshire and the coast.</p>
+  </div>
+  <div style="position:relative;margin-top:40px;overflow:hidden">
+    <div style="display:flex;align-items:center;gap:{{ gap }};transform:translateX({{ trackX }});transition:transform .55s cubic-bezier(.4,0,.2,1)">
+      <sc-for list="{{ slides }}" as="s" hint-placeholder-count="4">
+        <div style="flex:0 0 {{ slideW }};border-radius:28px;overflow:hidden;background:#fff;transform:scale({{ s.scale }});opacity:{{ s.opacity }};transition:transform .55s, opacity .55s">
+          <div style="display:{{ s.singleShow }};aspect-ratio:4/3;width:100%"><img src="{{ s.srcA }}" srcset="{{ s.setA }}" sizes="(max-width:640px) 78vw, 616px" width="{{ s.wA }}" height="{{ s.hA }}" alt="{{ s.altA }}" loading="lazy" decoding="async" style="display:block;width:100%;height:100%;object-fit:cover;object-position:{{ s.posA }}"></div>
+          <div style="display:{{ s.pairShow }};flex-direction:{{ s.pairDir }};gap:6px;background:#003A55">
+            <figure style="margin:0;position:relative;flex:{{ s.pairFlex }};min-width:0;aspect-ratio:{{ s.pairAspect }};overflow:hidden"><img src="{{ s.srcA }}" srcset="{{ s.setA }}" sizes="(max-width:640px) 78vw, 310px" width="{{ s.wA }}" height="{{ s.hA }}" alt="{{ s.altA }}" loading="lazy" decoding="async" style="display:block;width:100%;height:100%;object-fit:cover;object-position:{{ s.posA }}"><figcaption style="position:absolute;left:12px;top:12px;background:#F0E8DF;color:#003A55;border:2px solid #003A55;border-radius:999px;padding:3px 12px;font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:.04em;line-height:1.4">Before</figcaption></figure>
+            <figure style="margin:0;position:relative;flex:{{ s.pairFlex }};min-width:0;aspect-ratio:{{ s.pairAspect }};overflow:hidden"><img src="{{ s.srcB }}" srcset="{{ s.setB }}" sizes="(max-width:640px) 78vw, 310px" width="{{ s.wB }}" height="{{ s.hB }}" alt="{{ s.altB }}" loading="lazy" decoding="async" style="display:block;width:100%;height:100%;object-fit:cover;object-position:{{ s.posB }}"><figcaption style="position:absolute;left:12px;top:12px;background:#F7A8A8;color:#003A55;border:2px solid #003A55;border-radius:999px;padding:3px 12px;font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:.04em;line-height:1.4">After</figcaption></figure>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+    <button onClick="{{ prevJob }}" aria-label="Previous photo" style="position:absolute;top:50%;left:{{ arrowInset }};transform:translateY(-50%);width:56px;height:56px;border-radius:999px;border:2px solid #003A55;background:#F7A8A8;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:2"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#003A55" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"></path></svg></button>
+    <button onClick="{{ nextJob }}" aria-label="Next photo" style="position:absolute;top:50%;right:{{ arrowInset }};transform:translateY(-50%);width:56px;height:56px;border-radius:999px;border:2px solid #003A55;background:#F7A8A8;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:2"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#003A55" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"></path></svg></button>
+  </div>
+  <div style="display:flex;justify-content:center;gap:10px;margin-top:26px">
+    <sc-for list="{{ dots }}" as="d" hint-placeholder-count="5">
+      <button onClick="{{ d.go }}" aria-label="Go to photo" style="width:{{ d.w }};height:12px;border-radius:999px;border:2px solid #003A55;background:{{ d.bg }};padding:0;cursor:pointer;transition:width .3s"></button>
+    </sc-for>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" data-screen-label="Services" style="padding:clamp(64px,9vw,120px) clamp(20px,4vw,48px);border-top:2px solid #003A55">
+  <div style="max-width:1240px;margin:0 auto">
+    <h2 style="margin:0 0 clamp(36px,5vw,60px);font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(32px,4.6vw,56px);line-height:1.08;text-align:center">What we <span style="display:inline-block;background:#F7A8A8;padding:0 .18em;border-radius:10px;transform:rotate(2deg)">clean</span></h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:24px">
+      <sc-for list="{{ services }}" as="sv" hint-placeholder-count="8">
+        <a href="{{ sv.href }}" style="display:flex;flex-direction:column;background:#fff;border-radius:28px;overflow:hidden;text-decoration:none;color:#003A55;border:2px solid #003A55" style-hover="opacity:1;transform:translateY(-4px)">
+          <div style="aspect-ratio:4/3;width:100%;border-bottom:2px solid #003A55;position:relative;overflow:hidden;background:#F7A8A8"><img src="{{ sv.src }}" srcset="{{ sv.set }}" sizes="(max-width:640px) 90vw, 400px" width="{{ sv.w }}" height="{{ sv.h }}" alt="{{ sv.alt }}" loading="lazy" decoding="async" style="display:{{ sv.imgShow }};width:100%;height:100%;object-fit:cover;object-position:{{ sv.pos }}"><div style="display:{{ sv.iconShow }};position:absolute;left:0;top:0;right:0;bottom:0;align-items:center;justify-content:center"><svg width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="#003A55" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:{{ sv.ic1 }}"><rect x="4" y="3.5" width="13" height="5" rx="1"></rect><path d="M17 6h3v5h-9v3"></path><path d="M11 14v6.5"></path></svg><svg width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="#003A55" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:{{ sv.ic2 }}"><rect x="5" y="3" width="14" height="18" rx="1"></rect><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2M11 21v-3h2v3"></path></svg><svg width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="#003A55" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:{{ sv.ic3 }}"><path d="M3 11l9-7 9 7"></path><path d="M5 10v10h14V10"></path><path d="M10 20v-5h4v5"></path></svg></div></div>
+          <div style="padding:22px 24px 24px;display:flex;flex-direction:column;gap:8px;flex:1">
+            <h3 style="margin:0;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:21px;line-height:1.15">{{ sv.title }}</h3>
+            <p style="margin:0;font-size:16px;text-wrap:pretty;flex:1">{{ sv.text }}</p>
+            <span style="margin-top:8px;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.06em;display:flex;align-items:center;gap:8px">{{ sv.link }} <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#003A55" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section id="prices" data-screen-label="Prices" style="padding:clamp(64px,9vw,120px) clamp(20px,4vw,48px);background:#fff;border-top:2px solid #003A55;border-bottom:2px solid #003A55">
+  <div style="max-width:1100px;margin:0 auto">
+    <h2 style="margin:0 0 14px;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(32px,4.6vw,56px);line-height:1.08;text-align:center">What it <span style="display:inline-block;background:#F7A8A8;padding:0 .18em;border-radius:10px;transform:rotate(-2deg)">costs</span></h2>
+    <p style="margin:0 auto clamp(36px,5vw,56px);text-align:center;max-width:600px;text-wrap:pretty">These are our starting prices. We confirm your exact price before we book you in, and it won’t change on the day.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:24px;align-items:stretch">
+      <div style="background:#F0E8DF;border:2px solid #003A55;border-radius:28px;padding:36px 30px;display:flex;flex-direction:column;gap:14px">
+        <h3 style="margin:0;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:22px">Regular clean</h3>
+        
+        <p style="margin:0;font-family:'Titan One',sans-serif;font-size:56px;line-height:1">£25<span style="font-size: 22px;">&nbsp;per hour</span></p>
+        <p style="margin:0;flex:1">Minimum 2 hours. Best for flats and smaller homes on a weekly or fortnightly plan.</p>
+        <a href="#quote" style="align-self:flex-start;border:2px solid #003A55;color:#003A55;text-decoration:none;border-radius:999px;padding:12px 24px;font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:15px" style-hover="background:#003A55;color:#F0E8DF;opacity:1">Book regular</a>
+      </div>
+      <div style="background:#003A55;color:#F0E8DF;border:2px solid #003A55;border-radius:28px;padding:36px 30px;display:flex;flex-direction:column;gap:14px;position:relative">
+        <span style="position:absolute;top:-16px;right:24px;background:#F7A8A8;color:#003A55;border:2px solid #003A55;border-radius:999px;padding:4px 14px;font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:13px;transform:rotate(3deg)">Best first visit</span>
+        <h3 style="margin:0;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:22px;color:#F7A8A8">Deep clean</h3>
+        <p style="margin:0;font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:.06em">From</p>
+        <p style="margin:-10px 0 0;font-family:'Titan One',sans-serif;font-size:56px;line-height:1">£150</p>
+        <p style="margin:0;flex:1">About 3 hours for a typical 2-bed home. Most customers start here, then switch to regular cleans.</p>
+        <a href="#quote" style="align-self:flex-start;background:#F7A8A8;border:2px solid #F7A8A8;color:#003A55;text-decoration:none;border-radius:999px;padding:12px 24px;font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:15px" style-hover="background:#F0E8DF;border-color:#F0E8DF;opacity:1">Book a deep clean</a>
+      </div>
+      <div style="background:#F0E8DF;border:2px solid #003A55;border-radius:28px;padding:36px 30px;display:flex;flex-direction:column;gap:14px">
+        <h3 style="margin:0;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:22px">End of tenancy</h3>
+        <p style="margin:0;font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:.06em">From</p>
+        <p style="margin:-10px 0 0;font-family:'Titan One',sans-serif;font-size:56px;line-height:1">£175</p>
+        <p style="margin:0;flex:1">Priced by number of bedrooms. Ovens, cupboards inside and out, and all appliances included.</p>
+        <a href="#quote" style="align-self:flex-start;border:2px solid #003A55;color:#003A55;text-decoration:none;border-radius:999px;padding:12px 24px;font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:15px" style-hover="background:#003A55;color:#F0E8DF;opacity:1">Book move-out clean</a>
+      </div>
+    </div>
+    <p style="margin:28px auto 0;text-align:center;max-width:640px;font-size:15px;text-wrap:pretty">Final price depends on size and condition. Larger homes and add-ons (oven, inside fridge, windows) quoted separately.</p>
+  </div>
+</section>
+
+<!-- PROMISE + FOUNDERS -->
+<section id="about" data-screen-label="Our promise" style="padding:clamp(64px,9vw,120px) clamp(20px,4vw,48px)">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:clamp(40px,6vw,80px);align-items:start">
+    <div>
+      <p style="margin:0 0 14px;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.08em">Ein addewid i chi · Our promise to you</p>
+      <h2 style="margin:0 0 36px;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(32px,4.6vw,56px);line-height:1.08;text-wrap:balance">Three things you can <span style="display:inline-block;background:#F7A8A8;padding:0 .18em;border-radius:10px;transform:rotate(-2deg)">count</span> on</h2>
+      <div style="display:flex;flex-direction:column">
+        <div style="display:grid;grid-template-columns:88px 1fr;gap:16px;padding:26px 0;border-top:2px solid #003A55">
+          <span style="font-family:'Titan One',sans-serif;font-size:38px;line-height:1;color:#003A55">.01</span>
+          <div><h3 style="margin:0 0 6px;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:22px">You’ll always know when we’re coming.</h3><p style="margin:0">A set time, a text when we set off, and a heads-up if anything changes.</p></div>
+        </div>
+        <div style="display:grid;grid-template-columns:88px 1fr;gap:16px;padding:26px 0;border-top:2px solid #003A55">
+          <span style="font-family:'Titan One',sans-serif;font-size:38px;line-height:1;color:#003A55">.02</span>
+          <div><h3 style="margin:0 0 6px;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:22px">You’ll see the same faces.</h3><p style="margin:0">We keep the same cleaner on your home wherever we can, so you’re not explaining things every visit.</p></div>
+        </div>
+        <div style="display:grid;grid-template-columns:88px 1fr;gap:16px;padding:26px 0;border-top:2px solid #003A55;border-bottom:2px solid #003A55">
+          <span style="font-family:'Titan One',sans-serif;font-size:38px;line-height:1;color:#003A55">.03</span>
+          <div><h3 style="margin:0 0 6px;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:22px">You’ll get a walk-round at the end.</h3><p style="margin:0">If you’re in, we check it with you before we leave. If you’re out, we send photos.</p></div>
+        </div>
+      </div>
+    </div>
+    <div style="background:#fff;border:2px solid #003A55;border-radius:28px;overflow:hidden;align-self:stretch;display:flex;flex-direction:column;justify-content:center">
+      <!-- founders photo: add real photo of Shakira and Kins -->
+      <div style="padding:clamp(30px,4vw,52px)">
+        <h3 style="margin:0 0 12px;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(26px,2.6vw,34px);line-height:1.15">Two friends, one phone number</h3>
+        <p style="margin:0 0 18px;font-size:clamp(18px,1.5vw,21px);text-wrap:pretty">Pink’s Home is run by Shakira Williams and Kins Brown from just outside Llanelli. We started it because finding a cleaner round here meant chasing people who never called back. So we keep it simple: one number, real people, and the same team each time. Ring us and you’ll usually speak to one of us. Mae croeso i chi siarad Cymraeg.</p>
+        <p style="margin:0;font-family:'Titan One',sans-serif;font-size:20px;text-transform:uppercase">Shakira &amp; Kins</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" data-screen-label="Reviews" style="background:#003A55;color:#F0E8DF;padding:clamp(64px,9vw,110px) clamp(20px,4vw,48px)">
+  <div style="max-width:960px;margin:0 auto;text-align:center">
+    <p style="margin:0 0 10px;font-family:'Titan One',sans-serif;font-size:22px;color:#F7A8A8">Diolch!</p>
+    <h2 style="margin:0 0 12px;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(32px,4.6vw,56px);line-height:1.08">Kind words from our customers</h2>
+    <p style="margin:0 0 40px;font-weight:700">Rated 4.9 out of 5 from 10 Google reviews</p>
+    <div style="display:flex;justify-content:center;gap:6px;margin-bottom:26px">
+      <sc-for list="{{ stars }}" as="st" hint-placeholder-count="5">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="#F7A8A8"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"></path></svg>
+      </sc-for>
+    </div>
+    <div style="display:grid;grid-template-columns:auto 1fr auto;gap:clamp(12px,3vw,36px);align-items:center">
+      <button onClick="{{ prevReview }}" aria-label="Previous review" style="width:56px;height:56px;border-radius:999px;border:2px solid #F0E8DF;background:transparent;display:flex;align-items:center;justify-content:center;cursor:pointer" style-hover="background:#F0E8DF"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7A8A8" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"></path></svg></button>
+      <blockquote style="margin:0">
+        <p style="margin:0;font-family:'Titan One',sans-serif;font-size:clamp(22px,3vw,34px);line-height:1.25;text-wrap:balance">“{{ review.text }}”</p>
+        <footer style="margin-top:20px;font-weight:700">{{ review.who }}</footer>
+      </blockquote>
+      <button onClick="{{ nextReview }}" aria-label="Next review" style="width:56px;height:56px;border-radius:999px;border:2px solid #F0E8DF;background:transparent;display:flex;align-items:center;justify-content:center;cursor:pointer" style-hover="background:#F0E8DF"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F7A8A8" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"></path></svg></button>
+    </div>
+    <p style="margin:30px 0 0;font-size:14px;font-weight:700;letter-spacing:.08em">{{ reviewCount }}</p>
+    <a href="[GOOGLE REVIEWS URL]" style="display:inline-flex;margin-top:22px;color:#F7A8A8;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:15px" style-hover="color:#F0E8DF;opacity:1">Read all our reviews on Google</a>
+  </div>
+</section>
+
+<!-- AREAS -->
+<section id="areas" data-screen-label="Areas" style="padding:clamp(64px,9vw,120px) clamp(20px,4vw,48px)">
+  <div style="max-width:960px;margin:0 auto;text-align:center">
+    <h2 style="margin:0 0 14px;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(32px,4.6vw,56px);line-height:1.08">Where you’ll <span style="display:inline-block;background:#F7A8A8;padding:0 .18em;border-radius:10px;transform:rotate(2deg)">find</span> us</h2>
+    <p style="margin:0 auto 36px;max-width:560px;text-wrap:pretty">We’re based near Llanelli and clean homes up to about an hour away. Not sure if you’re in range? Send us your postcode.</p>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px">
+      <sc-for list="{{ areas }}" as="ar" hint-placeholder-count="11">
+        <a href="{{ ar.href }}" style="border:2px solid #003A55;border-radius:999px;padding:12px 24px;text-decoration:none;font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:16px;background:#fff" style-hover="background:#F7A8A8;opacity:1">{{ ar.name }}</a>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" data-screen-label="FAQ" style="padding:clamp(64px,9vw,120px) clamp(20px,4vw,48px);border-top:2px solid #003A55">
+  <div style="max-width:860px;margin:0 auto">
+    <h2 style="margin:0 0 clamp(32px,4vw,48px);font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(32px,4.6vw,56px);line-height:1.08;text-align:center">Good <span style="display:inline-block;background:#F7A8A8;padding:0 .18em;border-radius:10px;transform:rotate(-2deg)">questions</span></h2>
+    <div style="border-top:2px solid #003A55">
+        <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="6">
+          <div style="border-bottom:2px solid #003A55">
+            <button onClick="{{ f.toggle }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;background:transparent;border:0;padding:22px 0;text-align:left;cursor:pointer;color:#003A55;font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:18px;line-height:1.25">
+              <span>{{ f.q }}</span>
+              <span style="flex:none;width:36px;height:36px;border-radius:999px;border:2px solid #003A55;background:{{ f.bg }};display:flex;align-items:center;justify-content:center;font-size:20px;line-height:1">{{ f.sign }}</span>
+            </button>
+            <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
+              <p style="margin:0;padding:0 52px 24px 0;text-wrap:pretty">{{ f.a }}</p>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section id="quote" data-screen-label="Quote" style="padding:clamp(64px,9vw,120px) clamp(20px,4vw,48px);border-top:2px solid #003A55">
+  <div style="max-width:760px;margin:0 auto;background:#fff;border:2px solid #003A55;border-radius:28px;padding:clamp(26px,4vw,44px)">
+    <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+      <h2 style="margin:0 0 8px;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(28px,3.4vw,40px);line-height:1.08">TELL US ABOUT YOUR CLEANING&nbsp;</h2>
+      <p style="margin:0 0 26px;text-wrap:pretty">Fill this in and we’ll come back with a price. Quicker by phone? <br>Ring <a href="tel:07902769352" style="font-weight: 800;">07902 769352</a> or message us on <a href="https://wa.me/447902769352" style="font-weight: 800;">WhatsApp</a>.</p>
+      <form onSubmit="{{ submit }}" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:16px">
+        <label style="display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.05em">Your name<input required="{{ true }}" name="name" autoComplete="name" style="border:2px solid #003A55;border-radius:14px;padding:13px 14px;font-size:16px;background:#F0E8DF;color:#003A55;font-weight:400;text-transform:none;letter-spacing:0"></label>
+        <label style="display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.05em">Phone number<input required="{{ true }}" type="tel" name="phone" autoComplete="tel" style="border:2px solid #003A55;border-radius:14px;padding:13px 14px;font-size:16px;background:#F0E8DF;color:#003A55;font-weight:400;text-transform:none;letter-spacing:0"></label>
+        <label style="display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.05em">Email<input type="email" name="email" autoComplete="email" style="border:2px solid #003A55;border-radius:14px;padding:13px 14px;font-size:16px;background:#F0E8DF;color:#003A55;font-weight:400;text-transform:none;letter-spacing:0"></label>
+        <label style="display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.05em">Postcode<input required="{{ true }}" name="postcode" autoComplete="postal-code" style="border:2px solid #003A55;border-radius:14px;padding:13px 14px;font-size:16px;background:#F0E8DF;color:#003A55;font-weight:400;text-transform:none;letter-spacing:0"></label>
+        <label style="display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.05em">What would you like cleaned?
+          <select name="service" required="{{ true }}" style="border:2px solid #003A55;border-radius:14px;padding:13px 14px;font-size:16px;background:#F0E8DF;color:#003A55;font-weight:400;text-transform:none;letter-spacing:0">
+            <option value="">Choose one</option>
+            <option>Regular clean</option>
+            <option>Deep clean</option>
+            <option>End of tenancy</option>
+            <option>Holiday let changeover</option>
+            <option>Mould cleaning</option>
+            <option>Windows &amp; gutters</option>
+            <option>Not sure yet</option>
+          </select>
+        </label>
+        <label style="display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.05em">How many bedrooms?
+          <select name="bedrooms" style="border:2px solid #003A55;border-radius:14px;padding:13px 14px;font-size:16px;background:#F0E8DF;color:#003A55;font-weight:400;text-transform:none;letter-spacing:0">
+            <option value="">Choose one</option>
+            <option>Studio</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
+          </select>
+        </label>
+        <label style="grid-column:1/-1;display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.05em">Anything we should know?<textarea name="message" rows="4" placeholder="Pets, parking, key safe" style="border:2px solid #003A55;border-radius:14px;padding:13px 14px;font-size:16px;background:#F0E8DF;color:#003A55;font-weight:400;text-transform:none;letter-spacing:0;resize:vertical"></textarea></label>
+        <label style="grid-column:1/-1;display:flex;gap:12px;align-items:flex-start;font-size:15px;cursor:pointer"><input type="checkbox" required="{{ true }}" style="width:22px;height:22px;margin:1px 0 0;accent-color:#003A55;flex:none"><span>Pink’s Home can contact me about this quote. See our <a href="privacy.html">privacy policy</a>.</span></label>
+        <button type="submit" style="grid-column:1/-1;justify-self:start;background:#F7A8A8;color:#003A55;border:2px solid #003A55;border-radius:999px;padding:16px 32px;font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:17px;letter-spacing:.03em;cursor:pointer" style-hover="background:#003A55;color:#F7A8A8">Send my request</button>
+      </form>
+    </sc-if>
+    <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+      <div style="text-align:center;padding:40px 0">
+        <h2 style="margin:0 0 12px;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(28px,3.4vw,40px);line-height:1.08">Diolch!</h2>
+        <p style="margin:0 auto;max-width:420px;text-wrap:pretty">We’ve got your details and will be in touch soon. If it’s urgent, call <a href="tel:07902769352" style="font-weight:800">07902 769352</a>.</p>
+      </div>
+    </sc-if>
+  </div>
+</section>
+
+<!-- SERVICE AREA MAP -->
+<section data-screen-label="Service area" style="padding:clamp(64px,9vw,110px) clamp(20px,4vw,48px);border-top:2px solid #003A55">
+  <div style="max-width:1240px;margin:0 auto;text-align:center">
+    <h2 style="margin:0 0 14px;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(30px,4.2vw,52px);line-height:1.08;text-wrap:balance">Serving West Wales <span style="display:inline-block;background:#F7A8A8;padding:0 .18em;border-radius:10px;transform:rotate(2deg)">homeowners</span></h2>
+    <p style="margin:0 auto clamp(28px,4vw,44px);max-width:620px;text-wrap:pretty">Based at Llanelli Gate, Dafen — covering Carmarthenshire, Swansea and Pembrokeshire.</p>
+    <a href="https://www.google.com/maps/search/?api=1&amp;query=Llanelli+Gate+Dafen+Llanelli+SA14+8LQ" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:#003A55;color:#F0E8DF;text-decoration:none;border-radius:999px;padding:11px 20px;font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:14px;letter-spacing:.03em" style-hover="background:#F7A8A8;color:#003A55;opacity:1"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F7A8A8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"></path><circle cx="12" cy="9" r="2.5"></circle></svg>Open in Maps</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer data-screen-label="Footer" style="border-top:2px solid #003A55;padding:clamp(64px,9vw,110px) clamp(20px,4vw,48px) 0">
+  <div style="max-width:1240px;margin:0 auto">
+    <h2 style="margin:0 0 20px;font-family:'Titan One',sans-serif;font-weight:400;text-transform:none;font-size:clamp(34px,6.4vw,92px);line-height:1;letter-spacing:.005em;text-wrap:balance"><span style="display:inline-block;background:#F7A8A8;padding:0 .14em;border-radius:16px;transform:rotate(-3deg)">SEND</span> a photo, get a price.</h2>
+    <p style="margin:0 0 clamp(64px,7vw,96px);max-width:640px;font-size:clamp(17px,1.6vw,20px);line-height:1.5;text-wrap:pretty">Message us on WhatsApp and you’ll have a fixed price within one working day.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:48px clamp(48px,5vw,64px);align-items:start;padding-bottom:clamp(48px,6vw,72px)">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div style="width:220px;height:66px"><img src="assets/pinks-home-services-logo.png" alt="Pink's Home Services" style="display:block;width:100%;height:100%;object-fit:contain;object-position:left center"></div>
+        <p style="margin:0;max-width:280px;font-size:16px;line-height:1.6;text-wrap:pretty">Pink’s Home · Cleaning based near Llanelli, covering Carmarthenshire, Swansea and Pembrokeshire.</p>
+        <div style="display:flex;gap:12px;padding:2px">
+          <a href="https://www.facebook.com/profile.php?id=61556828155629" target="_blank" rel="noopener" aria-label="Pink's Home on Facebook" style="flex:none;width:46px;height:46px;border-radius:999px;border:2px solid #003A55;display:flex;align-items:center;justify-content:center" style-hover="background:#F7A8A8;opacity:1"><svg width="20" height="20" viewBox="0 0 24 24" fill="#003A55"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.8c0-.9.3-1.5 1.6-1.5h1.7V3.4c-.3 0-1.3-.1-2.5-.1-2.4 0-4.1 1.5-4.1 4.2v2.3H7.5V13h2.7v8z"></path></svg></a>
+          <a href="https://wa.me/447902769352" aria-label="WhatsApp" style="flex:none;width:46px;height:46px;border-radius:999px;border:2px solid #003A55;display:flex;align-items:center;justify-content:center" style-hover="background:#F7A8A8;opacity:1"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#003A55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"></path><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 .9c-1-.5-2.3-1.8-2.8-2.8l.9-1-1-2z"></path></svg></a>
+        </div>
+      </div>
+      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column"><h3 style="margin:0 0 20px;font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase">Contact</h3><div style="display:flex;flex-direction:column;gap:12px;font-size:16px;line-height:1.4">
+          <a href="tel:07902769352" style="font-weight:800;font-size:20px;text-decoration:none">07902 769352</a>
+          <a href="mailto:service@pinkshome.co.uk" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">service@pinkshome.co.uk</a>
+          <span>Monday to Saturday, 8:30am to 10:30pm</span>
+        </div></div>
+      </sc-if>
+      <div style="display:flex;flex-direction:column"><h3 style="margin:0 0 20px;font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase">Services</h3><nav style="display:flex;flex-direction:column;gap:12px;font-size:16px;line-height:1.4"><a href="End of Tenancy Cleaning.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">End of tenancy</a><a href="After Builders Cleaning.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">After builders</a><a href="Deep Cleaning.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Deep cleaning</a><a href="Commercial Cleaning.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Commercial</a><a href="Mould and Damp Cleaning.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Mould &amp; damp</a><a href="Holiday Let Cleaning.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Holiday lets</a><a href="Regular Cleaning.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Regular cleaning</a><a href="Exterior Cleaning.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Exterior cleaning</a></nav></div>
+      <div style="display:flex;flex-direction:column"><h3 style="margin:0 0 20px;font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase">Areas</h3><nav style="display:flex;flex-direction:column;gap:12px;font-size:16px;line-height:1.4"><a href="Area - Llanelli.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Llanelli</a><a href="Area - Swansea.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Swansea</a><a href="Area - Carmarthen.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Carmarthen</a><a href="Area - Tenby.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Tenby</a><a href="Areas.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">All areas →</a></nav><div style="height:28px"></div><nav style="display:flex;flex-direction:column;gap:12px;font-size:16px;line-height:1.4"><a href="#about" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">About</a><a href="#reviews" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Reviews</a><a href="#prices" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Prices</a><a href="#quote" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Contact</a></nav></div>
+      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;flex-direction:column"><h3 style="margin:0 0 20px;font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase">Contact</h3><div style="display:flex;flex-direction:column;gap:12px;font-size:16px;line-height:1.4">
+          <a href="tel:07902769352" style="font-weight:800;font-size:20px;text-decoration:none">07902 769352</a>
+          <a href="mailto:service@pinkshome.co.uk" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">service@pinkshome.co.uk</a>
+          <span>Monday to Saturday, 8:30am to 10:30pm</span>
+        </div></div>
+      </sc-if>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;padding:24px 0;border-top:1px solid #003A55;font-size:14px;font-weight:600">
+      <span>© 2026 Pink’s Home. All rights reserved.</span>
+      <div style="display:flex;gap:8px"><a href="privacy.html" style="text-decoration:none" style-hover="text-decoration:underline;opacity:1">Privacy</a><span aria-hidden="true">·</span><a href="terms.html" style="text-decoration:none" style-hover="text-decoration:underline;opacity:1">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { w: typeof window !== 'undefined' ? window.innerWidth : 1280, menu: false, cat: 'homes', job: 0, rev: 0, faq: 0, sent: false };
+  videoRef = React.createRef();
+  componentDidMount() {
+    this.onResize = () => this.setState({ w: window.innerWidth });
+    window.addEventListener('resize', this.onResize);
+    const v = this.videoRef.current;
+    this.tryPlay = () => { const el = this.videoRef.current; if (!el || !el.paused) return; el.muted = true; el.defaultMuted = true; el.setAttribute('muted', ''); const p = el.play(); if (p && p.catch) p.catch(() => {}); };
+    if (v) { v.setAttribute('muted', ''); v.muted = true; ['loadeddata', 'canplay'].forEach(ev => v.addEventListener(ev, this.tryPlay)); }
+    this.tryPlay();
+    this.retry = setTimeout(this.tryPlay, 600);
+    ['pointerdown', 'scroll', 'keydown', 'touchstart'].forEach(ev => window.addEventListener(ev, this.tryPlay, { once: true, passive: true }));
+  }
+  componentWillUnmount() { window.removeEventListener('resize', this.onResize); clearTimeout(this.retry); }
+  renderVals() {
+    const { w, menu, cat, job, rev, faq, sent } = this.state;
+    const mobile = w < 860, narrow = w < 640;
+    const sw = narrow ? 78 : 56, g = narrow ? 3 : 2.5;
+    const P = (n, w, h, w8, pos, alt) => ({ src: `assets/web/${n}-1600.webp`, set: `assets/web/${n}-800.webp ${w8}w, assets/web/${n}-1600.webp ${w}w`, w, h, pos, alt });
+    const jobs = {
+      homes: [
+        [P('toaster-before-kidwelly', 902, 1600, 451, '50% 45%', 'Toaster before cleaning, covered in grease and crumbs, in Kidwelly'), P('toaster-after-kidwelly', 902, 1600, 451, '50% 52%', 'The same toaster after cleaning')],
+        [P('fan-before-carmarthenshire', 1201, 1600, 600, '45% 60%', 'Extractor fan grille thick with dust in Carmarthenshire'), P('fan-after-carmarthenshire', 1201, 1600, 600, '55% 60%', 'The same fan after cleaning')],
+        [P('oven-pontyates', 902, 1600, 451, '50% 100%', 'Double oven cleaned inside, with racks and door glass, in Pontyates')],
+        [P('driveway-llanelli', 902, 1600, 451, '50% 8%', 'Tarmac driveway in Llanelli after jet washing')]
+      ],
+      lets: [
+        [P('holiday-let-living-burry-port', 1600, 902, 800, '35% 50%', 'Holiday let living room in Burry Port, ready for guests')],
+        [P('holiday-let-bedroom-burry-port', 902, 1600, 451, '50% 45%', 'Holiday let bedroom in Burry Port, made up for the next guests')]
+      ]
+    };
+    const list = jobs[cat], N = list.length;
+    const slides = list.map((im, i) => {
+      const a = im[0], b = im[1] || im[0], isPair = im.length > 1;
+      return {
+        id: `job-${cat}-${i + 1}`, scale: i === job ? 1 : 0.86, opacity: i === job ? 1 : 0.55,
+        pairShow: isPair ? 'flex' : 'none', singleShow: isPair ? 'none' : 'block',
+        pairDir: narrow ? 'column' : 'row', pairAspect: narrow ? '4/3' : '2/3', pairFlex: narrow ? '0 0 auto' : '1 1 0',
+        srcA: a.src, setA: a.set, wA: a.w, hA: a.h, altA: a.alt, posA: a.pos,
+        srcB: b.src, setB: b.set, wB: b.w, hB: b.h, altB: b.alt, posB: b.pos
+      };
+    });
+    const reviews = [['[REAL GOOGLE REVIEW]'], ['[REAL GOOGLE REVIEW]'], ['[REAL FACEBOOK REVIEW]']].map(([text]) => ({ text, who: '— Juliana Silva, Swansea' }));
+    const faqs = [
+      ['What’s the difference between a deep clean and a regular clean?', 'A deep clean is a longer first visit that gets into the places that build up over time, like limescale, oven fronts and skirting boards. After that, a regular 2-hour clean keeps it there.'],
+      ['Do I have to be home?', 'No. Lots of our customers leave a key or a key-safe code. We’ll send you photos when we’re done.'],
+      ['Will it be the same cleaner each time?', 'We keep the same person on your home whenever we can. If they’re off sick or on holiday, we’ll ask before sending someone else.'],
+      ['Do you bring your own products?', 'Yes. We bring everything, and our standard products are non-toxic and safe around children and pets. If you’d rather we used yours, just say.'],
+      ['Do you clean holiday lets on changeover days?', 'Yes. We work around your booking calendar across Pembrokeshire and Carmarthenshire, including weekends.'],
+      ['How do I pay?', 'By bank transfer or card after each clean. Regular customers can pay monthly. [CONFIRM PAYMENT OPTIONS]']
+    ].map(([q, a], i) => ({ q, a, open: faq === i, sign: faq === i ? '–' : '+', bg: faq === i ? '#F7A8A8' : 'transparent', toggle: () => this.setState({ faq: faq === i ? -1 : i }) }));
+    const pages = { 'end-of-tenancy': 'End of Tenancy Cleaning.dc.html', 'after-builders': 'After Builders Cleaning.dc.html', 'mould-treatment': 'Mould and Damp Cleaning.dc.html' };
+    const CARDS = {
+      'deep-cleaning': ['toaster-after-kidwelly', 902, 1600, 451, '50% 52%', 'Toaster cleaned until shiny after a deep clean in Kidwelly'],
+      'end-of-tenancy': ['oven-pontyates', 902, 1600, 451, '50% 100%', 'Double oven cleaned inside, with racks and door glass, in Pontyates'],
+      'mould-treatment': ['fan-after-carmarthenshire', 1201, 1600, 600, '55% 60%', 'Extractor fan after cleaning in Carmarthenshire'],
+      'holiday-let-changeovers': ['holiday-let-bedroom-burry-port', 902, 1600, 451, '50% 45%', 'Holiday let bedroom in Burry Port, made up for the next guests'],
+      'exterior-cleaning': ['driveway-llanelli', 902, 1600, 451, '50% 8%', 'Tarmac driveway in Llanelli after jet washing']
+    };
+    const cardFor = slug => {
+      const c = CARDS[slug];
+      const none = { ic1: 'none', ic2: 'none', ic3: 'none' };
+      if (c) return { ...none, imgShow: 'block', iconShow: 'none', src: `assets/web/${c[0]}-1600.webp`, set: `assets/web/${c[0]}-800.webp ${c[3]}w, assets/web/${c[0]}-1600.webp ${c[1]}w`, w: c[1], h: c[2], pos: c[4], alt: c[5] };
+      return { ...none, imgShow: 'none', iconShow: 'flex', src: 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==', set: '', w: 1, h: 1, pos: '50% 50%', alt: '', ic1: slug === 'after-builders' ? 'block' : 'none', ic2: slug === 'commercial-cleaning' ? 'block' : 'none', ic3: slug === 'regular-cleaning' ? 'block' : 'none' };
+    };
+    const services = [
+      ['end-of-tenancy', 'End of tenancy cleaning', 'To the letting-agent checklist, for tenants, landlords and students across Swansea and beyond.', 'End of tenancy cleaning'],
+      ['after-builders', 'After builders & post-construction', 'Dust, debris and paint splatter cleared after a build or renovation, ready to hand over.', 'After builders cleaning'],
+      ['deep-cleaning', 'Deep & one-off cleaning', 'A thorough top-to-bottom clean when a home needs more than a regular visit.', 'Deep cleaning'],
+      ['commercial-cleaning', 'Commercial & office cleaning', 'Offices, shops and lets on contract, including high dusting and high-level access cleaning.', 'Commercial cleaning'],
+      ['mould-treatment', 'Mould & damp treatment', 'Black mould cleaned and treated, with advice on keeping it from coming back.', 'Mould treatment'],
+      ['holiday-let-changeovers', 'Holiday let & Airbnb changeovers', 'Changeovers for coastal lets in Tenby, Saundersfoot and across Pembrokeshire.', 'Holiday let cleaning'],
+      ['regular-cleaning', 'Regular home cleaning', 'Weekly or fortnightly cleans to keep on top of the everyday.', 'Regular cleaning'],
+      ['exterior-cleaning', 'Exterior, jet & soft washing', 'Driveways, patios, render and gutters cleared of grime, moss and algae.', 'Exterior cleaning']
+    ].map(([slug, title, text, link]) => ({ href: pages[slug] || `services/${slug}.html`, id: `svc-${slug}`, photo: `${title} photo`, ...cardFor(slug), title, text, link }));
+    const areas = ['Llanelli', 'Carmarthen', 'Swansea', 'Sketty', 'Llangennech', 'Burry Port', 'Tenby', 'Saundersfoot', 'Haverfordwest', 'Pembroke', 'Bridgend']
+      .map(name => ({ name, href: ({ llanelli: 'Area - Llanelli.dc.html', swansea: 'Area - Swansea.dc.html', carmarthen: 'Area - Carmarthen.dc.html', tenby: 'Area - Tenby.dc.html' })[name.toLowerCase()] || 'Areas.dc.html' }));
+    return {
+      isDesktop: w >= 960, isMobile: w < 960, menuVisible: w < 960 && menu,
+      toggleMenu: () => this.setState({ menu: !menu }), closeMenu: () => this.setState({ menu: false }),
+      videoRef: this.videoRef,
+      homesBg: cat === 'homes' ? '#003A55' : 'transparent', homesFg: cat === 'homes' ? '#F0E8DF' : '#003A55',
+      letsBg: cat === 'lets' ? '#003A55' : 'transparent', letsFg: cat === 'lets' ? '#F0E8DF' : '#003A55',
+      showHomes: () => this.setState({ cat: 'homes', job: 0 }), showLets: () => this.setState({ cat: 'lets', job: 0 }),
+      slides, slideW: `${sw}%`, gap: `${g}%`, trackX: `${(100 - sw) / 2 - job * (sw + g)}%`,
+      arrowInset: narrow ? '6px' : `calc(${(100 - sw) / 2}% - 28px)`,
+      prevJob: () => this.setState({ job: (job - 1 + N) % N }), nextJob: () => this.setState({ job: (job + 1) % N }),
+      dots: slides.map((_, i) => ({ w: i === job ? '34px' : '12px', bg: i === job ? '#003A55' : 'transparent', go: () => this.setState({ job: i }) })),
+      services, areas, faqs,
+      stars: [1, 2, 3, 4, 5],
+      review: reviews[rev], reviewCount: `${rev + 1} / ${reviews.length}`,
+      prevReview: () => this.setState({ rev: (rev + 2) % 3 }), nextReview: () => this.setState({ rev: (rev + 1) % 3 }),
+      sent, notSent: !sent,
+      submit: e => { e.preventDefault(); this.setState({ sent: true }); }
+    };
+  }
+}
+</script>
+</body>
+</html>
