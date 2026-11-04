@@ -29,17 +29,17 @@ input,select,textarea,button{font-family:inherit}
 <!-- HEADER -->
 <header data-screen-label="Header" style="position:sticky;top:0;z-index:50;background:#F0E8DF;border-bottom:2px solid #003A55">
   <div style="max-width:1320px;margin:0 auto;padding:8px clamp(16px,3vw,32px);display:flex;align-items:center;justify-content:space-between;gap:24px">
-    <a href="Pinks Home Homepage.dc.html" aria-label="Pink's Home" style="display:block;flex:none;width:clamp(170px,20vw,250px);height:clamp(44px,5vw,60px);padding:2px 0">
+    <a href="/" aria-label="Pink's Home" style="display:block;flex:none;width:clamp(170px,20vw,250px);height:clamp(44px,5vw,60px);padding:2px 0">
       <img src="assets/pinks-home-services-logo.png" alt="Pink's Home Services" style="display:block;width:100%;height:100%;object-fit:contain;object-position:left center">
     </a>
     <div style="display:flex;align-items:center;justify-content:flex-end;gap:clamp(18px,2.4vw,32px);font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:15px;letter-spacing:.03em">
       <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
         <nav style="display:flex;gap:clamp(18px,2.2vw,28px)">
-          <a href="Pinks Home Homepage.dc.html#services" style="text-decoration:none">Services</a>
-          <a href="Areas.dc.html" style="text-decoration:none">Areas</a>
-          <a href="Pinks Home Homepage.dc.html#prices" style="text-decoration:none">Prices</a>
-          <a href="Pinks Home Homepage.dc.html#about" style="text-decoration:none">About</a>
-          <a href="Pinks Home Homepage.dc.html#reviews" style="text-decoration:none">Reviews</a>
+          <a href="/#services" style="text-decoration:none">Services</a>
+          <a href="/areas" style="text-decoration:none">Areas</a>
+          <a href="/#prices" style="text-decoration:none">Prices</a>
+          <a href="/#about" style="text-decoration:none">About</a>
+          <a href="/#reviews" style="text-decoration:none">Reviews</a>
         </nav>
         <div style="display:flex;align-items:center;gap:10px">
           <a href="tel:07902769352" aria-label="Call Pink's Home on 07902 769352" style="width:44px;height:44px;border-radius:999px;border:2px solid #003A55;display:flex;align-items:center;justify-content:center;flex:none" style-hover="background:#F7A8A8;opacity:1"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#003A55" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A18 18 0 0 1 3 5a2 2 0 0 1 2-2z"></path></svg></a>
@@ -61,11 +61,11 @@ input,select,textarea,button{font-family:inherit}
   <sc-if value="{{ menuVisible }}" hint-placeholder-val="{{ false }}">
     <div style="border-top:2px solid #003A55;padding:8px 20px 24px;display:flex;flex-direction:column">
       <nav style="display:flex;flex-direction:column;font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:18px">
-        <a href="Pinks Home Homepage.dc.html#services" onClick="{{ closeMenu }}" style="text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(0,58,85,.2)">Services</a>
-        <a href="Areas.dc.html" onClick="{{ closeMenu }}" style="text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(0,58,85,.2)">Areas</a>
-        <a href="Pinks Home Homepage.dc.html#prices" onClick="{{ closeMenu }}" style="text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(0,58,85,.2)">Prices</a>
-        <a href="Pinks Home Homepage.dc.html#about" onClick="{{ closeMenu }}" style="text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(0,58,85,.2)">About</a>
-        <a href="Pinks Home Homepage.dc.html#reviews" onClick="{{ closeMenu }}" style="text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(0,58,85,.2)">Reviews</a>
+        <a href="/#services" onClick="{{ closeMenu }}" style="text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(0,58,85,.2)">Services</a>
+        <a href="/areas" onClick="{{ closeMenu }}" style="text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(0,58,85,.2)">Areas</a>
+        <a href="/#prices" onClick="{{ closeMenu }}" style="text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(0,58,85,.2)">Prices</a>
+        <a href="/#about" onClick="{{ closeMenu }}" style="text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(0,58,85,.2)">About</a>
+        <a href="/#reviews" onClick="{{ closeMenu }}" style="text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(0,58,85,.2)">Reviews</a>
       </nav>
       <a href="#quote" onClick="{{ closeMenu }}" style="margin-top:20px;display:block;text-align:center;background:#F7A8A8;color:#003A55;text-decoration:none;border-radius:999px;padding:15px 20px;border:2px solid #003A55;font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:16px;letter-spacing:.03em">Get a quote!</a>
       <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px 28px;margin-top:16px;font-weight:800;font-size:16px">
@@ -80,7 +80,7 @@ input,select,textarea,button{font-family:inherit}
 <section data-screen-label="Hero" style="background:linear-gradient(180deg,#FFFFFF 0%,#F0E8DF 100%)">
   <div style="max-width:1320px;margin:0 auto;padding:clamp(32px,5vw,64px) clamp(20px,4vw,48px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:clamp(28px,4vw,64px);align-items:center">
     <div>
-      <nav aria-label="Breadcrumb" style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px;font-weight:700;font-size:14px"><a href="Pinks Home Homepage.dc.html">Home</a><span>›</span><a href="Areas.dc.html">Areas</a><span>›</span><span aria-current="page">Tenby</span></nav>
+      <nav aria-label="Breadcrumb" style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px;font-weight:700;font-size:14px"><a href="/">Home</a><span>›</span><a href="/areas">Areas</a><span>›</span><span aria-current="page">Tenby</span></nav>
       <h1 style="margin:0;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(32px,4.4vw,58px);line-height:1.06;text-wrap:balance">Cleaners in <span style="display:inline-block;background:#F7A8A8;padding:0 .18em;border-radius:10px;transform:rotate(-3deg)">Tenby</span></h1>
       <p style="margin:22px 0 0;font-size:clamp(17px,1.5vw,19px);max-width:600px;text-wrap:pretty">Tenby is busy all summer and quiet in winter, and homes here deal with both: holiday lets turning over every Saturday, and full-time residents dealing with sea air, sand and damp. We clean homes, lets and outside spaces around the town.</p>
       <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;max-width:600px">
@@ -100,26 +100,26 @@ input,select,textarea,button{font-family:inherit}
   <div style="max-width:1200px;margin:0 auto">
     <h2 style="margin:0;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(28px,4vw,48px);line-height:1.08;text-wrap:balance;text-align:center;margin-bottom:clamp(28px,4vw,48px)">What we do most in Tenby</h2>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px">
-      <a href="Holiday Let Cleaning.dc.html" style="display:flex;flex-direction:column;gap:12px;background:#fff;border:2px solid #003A55;border-radius:28px;padding:clamp(26px,3vw,36px);text-decoration:none;color:#003A55" style-hover="opacity:1;transform:translateY(-4px)">
+      <a href="/holiday-let-cleaning" style="display:flex;flex-direction:column;gap:12px;background:#fff;border:2px solid #003A55;border-radius:28px;padding:clamp(26px,3vw,36px);text-decoration:none;color:#003A55" style-hover="opacity:1;transform:translateY(-4px)">
         <span style="font-family:'Titan One',sans-serif;font-size:30px;line-height:1">.01</span>
         <h3 style="margin:0;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:24px;line-height:1.15">Holiday let changeovers</h3>
         <p style="margin:0;flex:1;text-wrap:pretty">Guest-ready turnarounds between check-out and check-in, weekends included.</p>
         <span style="display:flex;align-items:center;gap:8px;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.06em">See holiday let changeovers <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
       </a>
-      <a href="Deep Cleaning.dc.html" style="display:flex;flex-direction:column;gap:12px;background:#fff;border:2px solid #003A55;border-radius:28px;padding:clamp(26px,3vw,36px);text-decoration:none;color:#003A55" style-hover="opacity:1;transform:translateY(-4px)">
+      <a href="/deep-cleaning" style="display:flex;flex-direction:column;gap:12px;background:#fff;border:2px solid #003A55;border-radius:28px;padding:clamp(26px,3vw,36px);text-decoration:none;color:#003A55" style-hover="opacity:1;transform:translateY(-4px)">
         <span style="font-family:'Titan One',sans-serif;font-size:30px;line-height:1">.02</span>
         <h3 style="margin:0;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:24px;line-height:1.15">Deep cleaning</h3>
         <p style="margin:0;flex:1;text-wrap:pretty">Season-start resets for lets and one-off deep cleans for homes.</p>
         <span style="display:flex;align-items:center;gap:8px;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.06em">See deep cleaning <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
       </a>
-      <a href="Exterior Cleaning.dc.html" style="display:flex;flex-direction:column;gap:12px;background:#fff;border:2px solid #003A55;border-radius:28px;padding:clamp(26px,3vw,36px);text-decoration:none;color:#003A55" style-hover="opacity:1;transform:translateY(-4px)">
+      <a href="/exterior-cleaning" style="display:flex;flex-direction:column;gap:12px;background:#fff;border:2px solid #003A55;border-radius:28px;padding:clamp(26px,3vw,36px);text-decoration:none;color:#003A55" style-hover="opacity:1;transform:translateY(-4px)">
         <span style="font-family:'Titan One',sans-serif;font-size:30px;line-height:1">.03</span>
         <h3 style="margin:0;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:24px;line-height:1.15">Exterior cleaning</h3>
         <p style="margin:0;flex:1;text-wrap:pretty">Patios, paths and render cleared of the green build-up sea air brings.</p>
         <span style="display:flex;align-items:center;gap:8px;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.06em">See exterior cleaning <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
       </a>
     </div>
-    <div style="display:flex;justify-content:center;margin-top:28px"><a href="services/holiday-let-cleaning-pembrokeshire.html" style="display:flex;align-items:center;gap:10px;border:2px solid #003A55;border-radius:999px;padding:12px 22px;text-decoration:none;font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:15px;background:#F7A8A8;text-align:center" style-hover="background:#003A55;color:#F7A8A8;opacity:1">Let a cottage in Tenby? See Pembrokeshire holiday let cleaning <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div>
+    <div style="display:flex;justify-content:center;margin-top:28px"><a href="/holiday-let-cleaning" style="display:flex;align-items:center;gap:10px;border:2px solid #003A55;border-radius:999px;padding:12px 22px;text-decoration:none;font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:15px;background:#F7A8A8;text-align:center" style-hover="background:#003A55;color:#F7A8A8;opacity:1">Let a cottage in Tenby? See Pembrokeshire holiday let cleaning <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div>
   </div>
 </section>
 
@@ -127,14 +127,14 @@ input,select,textarea,button{font-family:inherit}
   <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px 20px">
     <h2 style="margin:0;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:18px">All our services</h2>
     <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px">
-      <a href="End of Tenancy Cleaning.dc.html" style="border:2px solid #003A55;border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:800;font-size:14px;background:#F0E8DF;min-height:40px;display:flex;align-items:center" style-hover="background:#F7A8A8;opacity:1">End of tenancy</a>
-      <a href="After Builders Cleaning.dc.html" style="border:2px solid #003A55;border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:800;font-size:14px;background:#F0E8DF;min-height:40px;display:flex;align-items:center" style-hover="background:#F7A8A8;opacity:1">After builders</a>
-      <a href="Deep Cleaning.dc.html" style="border:2px solid #003A55;border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:800;font-size:14px;background:#F0E8DF;min-height:40px;display:flex;align-items:center" style-hover="background:#F7A8A8;opacity:1">Deep cleaning</a>
-      <a href="Commercial Cleaning.dc.html" style="border:2px solid #003A55;border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:800;font-size:14px;background:#F0E8DF;min-height:40px;display:flex;align-items:center" style-hover="background:#F7A8A8;opacity:1">Commercial</a>
-      <a href="Mould and Damp Cleaning.dc.html" style="border:2px solid #003A55;border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:800;font-size:14px;background:#F0E8DF;min-height:40px;display:flex;align-items:center" style-hover="background:#F7A8A8;opacity:1">Mould &amp; damp</a>
-      <a href="Holiday Let Cleaning.dc.html" style="border:2px solid #003A55;border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:800;font-size:14px;background:#F0E8DF;min-height:40px;display:flex;align-items:center" style-hover="background:#F7A8A8;opacity:1">Holiday lets</a>
-      <a href="services/regular-cleaning.html" style="border:2px solid #003A55;border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:800;font-size:14px;background:#F0E8DF;min-height:40px;display:flex;align-items:center" style-hover="background:#F7A8A8;opacity:1">Regular cleaning</a>
-      <a href="Exterior Cleaning.dc.html" style="border:2px solid #003A55;border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:800;font-size:14px;background:#F0E8DF;min-height:40px;display:flex;align-items:center" style-hover="background:#F7A8A8;opacity:1">Exterior</a>
+      <a href="/end-of-tenancy-cleaning" style="border:2px solid #003A55;border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:800;font-size:14px;background:#F0E8DF;min-height:40px;display:flex;align-items:center" style-hover="background:#F7A8A8;opacity:1">End of tenancy</a>
+      <a href="/after-builders-cleaning" style="border:2px solid #003A55;border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:800;font-size:14px;background:#F0E8DF;min-height:40px;display:flex;align-items:center" style-hover="background:#F7A8A8;opacity:1">After builders</a>
+      <a href="/deep-cleaning" style="border:2px solid #003A55;border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:800;font-size:14px;background:#F0E8DF;min-height:40px;display:flex;align-items:center" style-hover="background:#F7A8A8;opacity:1">Deep cleaning</a>
+      <a href="/commercial-cleaning" style="border:2px solid #003A55;border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:800;font-size:14px;background:#F0E8DF;min-height:40px;display:flex;align-items:center" style-hover="background:#F7A8A8;opacity:1">Commercial</a>
+      <a href="/mould-and-damp-cleaning" style="border:2px solid #003A55;border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:800;font-size:14px;background:#F0E8DF;min-height:40px;display:flex;align-items:center" style-hover="background:#F7A8A8;opacity:1">Mould &amp; damp</a>
+      <a href="/holiday-let-cleaning" style="border:2px solid #003A55;border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:800;font-size:14px;background:#F0E8DF;min-height:40px;display:flex;align-items:center" style-hover="background:#F7A8A8;opacity:1">Holiday lets</a>
+      <a href="/regular-cleaning" style="border:2px solid #003A55;border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:800;font-size:14px;background:#F0E8DF;min-height:40px;display:flex;align-items:center" style-hover="background:#F7A8A8;opacity:1">Regular cleaning</a>
+      <a href="/exterior-cleaning" style="border:2px solid #003A55;border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:800;font-size:14px;background:#F0E8DF;min-height:40px;display:flex;align-items:center" style-hover="background:#F7A8A8;opacity:1">Exterior</a>
     </div>
   </div>
 </section>
@@ -146,7 +146,6 @@ input,select,textarea,button{font-family:inherit}
     <h2 style="margin:0;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(28px,4vw,48px);line-height:1.08;text-wrap:balance;color:#F0E8DF">Review from Tenby</h2>
     <div style="display:flex;gap:6px"><svg width="26" height="26" viewBox="0 0 24 24" fill="#F7A8A8"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"></path></svg><svg width="26" height="26" viewBox="0 0 24 24" fill="#F7A8A8"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"></path></svg><svg width="26" height="26" viewBox="0 0 24 24" fill="#F7A8A8"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"></path></svg><svg width="26" height="26" viewBox="0 0 24 24" fill="#F7A8A8"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"></path></svg><svg width="26" height="26" viewBox="0 0 24 24" fill="#F7A8A8"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"></path></svg></div>
     <blockquote style="margin:0;display:flex;flex-direction:column;gap:12px;align-items:center"><span style="display:inline-block;background:#FFE58A;color:#003A55;border:1px solid #C9A800;border-radius:6px;padding:1px 8px;font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:12px;letter-spacing:.04em;text-transform:uppercase;vertical-align:middle;line-height:1.6">[REAL REVIEW FROM A CUSTOMER IN THIS TOWN]</span><footer style="font-weight:700">— <span style="display:inline-block;background:#FFE58A;color:#003A55;border:1px solid #C9A800;border-radius:6px;padding:1px 8px;font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:12px;letter-spacing:.04em;text-transform:uppercase;vertical-align:middle;line-height:1.6">[Name]</span>, <span style="display:inline-block;background:#FFE58A;color:#003A55;border:1px solid #C9A800;border-radius:6px;padding:1px 8px;font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:12px;letter-spacing:.04em;text-transform:uppercase;vertical-align:middle;line-height:1.6">[Town]</span></footer></blockquote>
-    <a href="[GOOGLE REVIEWS URL]" style="color:#F7A8A8;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:15px" style-hover="color:#F0E8DF;opacity:1">Read all our reviews on Google</a>
   </div>
 </section>
 
@@ -185,7 +184,7 @@ input,select,textarea,button{font-family:inherit}
         
       </div>
     </div>
-    <div style="display:flex;justify-content:center;margin-top:24px"><a href="Pinks Home Homepage.dc.html#prices" style="display:flex;align-items:center;gap:8px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:15px">See full prices <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div>
+    <div style="display:flex;justify-content:center;margin-top:24px"><a href="/#prices" style="display:flex;align-items:center;gap:8px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:15px">See full prices <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div>
   </div>
 </section>
 
@@ -215,7 +214,7 @@ input,select,textarea,button{font-family:inherit}
     <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
       <h2 style="margin:0 0 8px;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(28px,3.4vw,40px);line-height:1.08">Tell us about your home</h2>
       <p style="margin:0 0 26px;text-wrap:pretty">Fill this in and we’ll come back with a price. Quicker by phone? Ring <a href="tel:07902769352" style="font-weight:800">07902 769352</a> or message us on <a href="https://wa.me/447902769352" style="font-weight:800">WhatsApp</a>.</p>
-      <form onSubmit="{{ submit }}" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:16px">
+      <form name="quote" method="POST" onSubmit="{{ submit }}" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:16px">
         <label style="display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.05em">Your name<input required="{{ true }}" name="name" autoComplete="name" style="border:2px solid #003A55;border-radius:14px;padding:13px 14px;font-size:16px;background:#F0E8DF;color:#003A55;font-weight:400;text-transform:none;letter-spacing:0"></input></label>
         <label style="display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.05em">Phone number<input required="{{ true }}" type="tel" name="phone" autoComplete="tel" style="border:2px solid #003A55;border-radius:14px;padding:13px 14px;font-size:16px;background:#F0E8DF;color:#003A55;font-weight:400;text-transform:none;letter-spacing:0"></input></label>
         <label style="display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.05em">Email<input type="email" name="email" autoComplete="email" style="border:2px solid #003A55;border-radius:14px;padding:13px 14px;font-size:16px;background:#F0E8DF;color:#003A55;font-weight:400;text-transform:none;letter-spacing:0"></input></label>
@@ -239,7 +238,7 @@ input,select,textarea,button{font-family:inherit}
           </select>
         </label>
         <label style="grid-column:1/-1;display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.05em">Anything we should know?<textarea name="message" rows="4" placeholder="Pets, parking, key safe, any add-ons" style="border:2px solid #003A55;border-radius:14px;padding:13px 14px;font-size:16px;background:#F0E8DF;color:#003A55;font-weight:400;text-transform:none;letter-spacing:0;resize:vertical"></textarea></label>
-        <label style="grid-column:1/-1;display:flex;gap:12px;align-items:flex-start;font-size:15px;cursor:pointer"><input type="checkbox" required="{{ true }}" style="width:22px;height:22px;margin:1px 0 0;accent-color:#003A55;flex:none"></input><span>Pink’s Home can contact me about this quote. See our <a href="privacy.html">privacy policy</a>.</span></label>
+        <label style="grid-column:1/-1;display:flex;gap:12px;align-items:flex-start;font-size:15px;cursor:pointer"><input type="checkbox" name="consent" value="yes" required="{{ true }}" style="width:22px;height:22px;margin:1px 0 0;accent-color:#003A55;flex:none"></input><span>Pink’s Home can contact me about this quote. See our <a href="/privacy">privacy policy</a>.</span></label>
         <button type="submit" style="grid-column:1/-1;justify-self:stretch;max-width:360px;background:#F7A8A8;color:#003A55;border:2px solid #003A55;border-radius:999px;padding:16px 32px;font-family:'Titan One',sans-serif;text-transform:uppercase;font-size:17px;letter-spacing:.03em;cursor:pointer" style-hover="background:#003A55;color:#F7A8A8">Send my request</button>
       </form>
     </sc-if>
@@ -273,8 +272,8 @@ input,select,textarea,button{font-family:inherit}
           <span>Monday to Saturday, 8:30am to 10:30pm</span>
         </div></div>
       </sc-if>
-      <div style="display:flex;flex-direction:column"><h3 style="margin:0 0 20px;font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase">Services</h3><nav style="display:flex;flex-direction:column;gap:12px;font-size:16px;line-height:1.4"><a href="End of Tenancy Cleaning.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">End of tenancy</a><a href="After Builders Cleaning.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">After builders</a><a href="Deep Cleaning.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Deep cleaning</a><a href="Commercial Cleaning.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Commercial</a><a href="Mould and Damp Cleaning.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Mould &amp; damp</a><a href="Holiday Let Cleaning.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Holiday lets</a><a href="Regular Cleaning.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Regular cleaning</a><a href="Exterior Cleaning.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Exterior cleaning</a></nav></div>
-      <div style="display:flex;flex-direction:column"><h3 style="margin:0 0 20px;font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase">Areas</h3><nav style="display:flex;flex-direction:column;gap:12px;font-size:16px;line-height:1.4"><a href="Area - Llanelli.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Llanelli</a><a href="Area - Swansea.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Swansea</a><a href="Area - Carmarthen.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Carmarthen</a><a href="Area - Tenby.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Tenby</a><a href="Areas.dc.html" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">All areas →</a></nav><div style="height:28px"></div><nav style="display:flex;flex-direction:column;gap:12px;font-size:16px;line-height:1.4"><a href="Pinks Home Homepage.dc.html#about" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">About</a><a href="Pinks Home Homepage.dc.html#reviews" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Reviews</a><a href="Pinks Home Homepage.dc.html#prices" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Prices</a><a href="Pinks Home Homepage.dc.html#quote" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Contact</a></nav></div>
+      <div style="display:flex;flex-direction:column"><h3 style="margin:0 0 20px;font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase">Services</h3><nav style="display:flex;flex-direction:column;gap:12px;font-size:16px;line-height:1.4"><a href="/end-of-tenancy-cleaning" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">End of tenancy</a><a href="/after-builders-cleaning" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">After builders</a><a href="/deep-cleaning" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Deep cleaning</a><a href="/commercial-cleaning" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Commercial</a><a href="/mould-and-damp-cleaning" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Mould &amp; damp</a><a href="/holiday-let-cleaning" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Holiday lets</a><a href="/regular-cleaning" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Regular cleaning</a><a href="/exterior-cleaning" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Exterior cleaning</a></nav></div>
+      <div style="display:flex;flex-direction:column"><h3 style="margin:0 0 20px;font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase">Areas</h3><nav style="display:flex;flex-direction:column;gap:12px;font-size:16px;line-height:1.4"><a href="/cleaners-llanelli" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Llanelli</a><a href="/cleaners-swansea" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Swansea</a><a href="/cleaners-carmarthen" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Carmarthen</a><a href="/cleaners-tenby" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Tenby</a><a href="/areas" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">All areas →</a></nav><div style="height:28px"></div><nav style="display:flex;flex-direction:column;gap:12px;font-size:16px;line-height:1.4"><a href="/#about" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">About</a><a href="/#reviews" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Reviews</a><a href="/#prices" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Prices</a><a href="/#quote" style="text-decoration:none;font-weight:600" style-hover="color:#003A55;text-decoration:underline;opacity:1">Contact</a></nav></div>
       <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
         <div style="display:flex;flex-direction:column"><h3 style="margin:0 0 20px;font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase">Contact</h3><div style="display:flex;flex-direction:column;gap:12px;font-size:16px;line-height:1.4">
           <a href="tel:07902769352" style="font-weight:800;font-size:20px;text-decoration:none">07902 769352</a>
@@ -285,13 +284,16 @@ input,select,textarea,button{font-family:inherit}
     </div>
     <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;padding:24px 0;border-top:1px solid #003A55;font-size:14px;font-weight:600">
       <span>© 2026 Pink’s Home. All rights reserved.</span>
-      <div style="display:flex;gap:8px"><a href="privacy.html" style="text-decoration:none" style-hover="text-decoration:underline;opacity:1">Privacy</a><span aria-hidden="true">·</span><a href="terms.html" style="text-decoration:none" style-hover="text-decoration:underline;opacity:1">Terms</a></div>
+      <div style="display:flex;gap:8px"><a href="/privacy" style="text-decoration:none" style-hover="text-decoration:underline;opacity:1">Privacy</a><span aria-hidden="true">·</span><a href="/terms" style="text-decoration:none" style-hover="text-decoration:underline;opacity:1">Terms</a></div>
     </div>
   </div>
 </footer>
 
 </div>
 </x-dc>
+<form name="quote" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input name="bot-field"><input name="name"><input name="phone"><input name="email"><input name="postcode"><input name="service"><input name="bedrooms"><textarea name="message"></textarea><input name="consent"><input name="page">
+</form>
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
   state = { w: typeof window !== 'undefined' ? window.innerWidth : 1280, menu: false, faq: 0, sent: false };
@@ -308,7 +310,15 @@ class Component extends DCLogic {
       isDesktop: w >= 960, isMobile: w < 960, menuVisible: w < 960 && menu,
       toggleMenu: () => this.setState({ menu: !menu }), closeMenu: () => this.setState({ menu: false }),
       faqs, sent, notSent: !sent,
-      submit: e => { e.preventDefault(); this.setState({ sent: true }); }
+      submit: e => {
+        e.preventDefault();
+        const data = new URLSearchParams(new FormData(e.target));
+        data.set('form-name', 'quote');
+        data.set('page', location.pathname);
+        fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: data.toString() })
+          .then(r => { if (!r.ok) throw new Error('status ' + r.status); this.setState({ sent: true }); })
+          .catch(() => { alert('Sorry, that did not send. Please call 07902 769352 or WhatsApp us instead.'); });
+      }
     };
   }
 }

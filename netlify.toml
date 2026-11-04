@@ -1,2 +1,138 @@
 [build]
   publish = "deploy"
+
+[[redirects]]
+  from = "/Areas.dc.html"
+  to = "/areas"
+  status = 301
+
+[[redirects]]
+  from = "/Area%20-%20Llanelli.dc.html"
+  to = "/cleaners-llanelli"
+  status = 301
+[[redirects]]
+  from = "/Area - Llanelli.dc.html"
+  to = "/cleaners-llanelli"
+  status = 301
+
+[[redirects]]
+  from = "/Area%20-%20Carmarthen.dc.html"
+  to = "/cleaners-carmarthen"
+  status = 301
+[[redirects]]
+  from = "/Area - Carmarthen.dc.html"
+  to = "/cleaners-carmarthen"
+  status = 301
+
+[[redirects]]
+  from = "/Area%20-%20Swansea.dc.html"
+  to = "/cleaners-swansea"
+  status = 301
+[[redirects]]
+  from = "/Area - Swansea.dc.html"
+  to = "/cleaners-swansea"
+  status = 301
+
+[[redirects]]
+  from = "/Area%20-%20Tenby.dc.html"
+  to = "/cleaners-tenby"
+  status = 301
+[[redirects]]
+  from = "/Area - Tenby.dc.html"
+  to = "/cleaners-tenby"
+  status = 301
+
+[[redirects]]
+  from = "/End%20of%20Tenancy%20Cleaning.dc.html"
+  to = "/end-of-tenancy-cleaning"
+  status = 301
+[[redirects]]
+  from = "/End of Tenancy Cleaning.dc.html"
+  to = "/end-of-tenancy-cleaning"
+  status = 301
+
+[[redirects]]
+  from = "/After%20Builders%20Cleaning.dc.html"
+  to = "/after-builders-cleaning"
+  status = 301
+[[redirects]]
+  from = "/After Builders Cleaning.dc.html"
+  to = "/after-builders-cleaning"
+  status = 301
+
+[[redirects]]
+  from = "/Holiday%20Let%20Cleaning.dc.html"
+  to = "/holiday-let-cleaning"
+  status = 301
+[[redirects]]
+  from = "/Holiday Let Cleaning.dc.html"
+  to = "/holiday-let-cleaning"
+  status = 301
+
+[[redirects]]
+  from = "/Deep%20Cleaning.dc.html"
+  to = "/deep-cleaning"
+  status = 301
+[[redirects]]
+  from = "/Deep Cleaning.dc.html"
+  to = "/deep-cleaning"
+  status = 301
+
+[[redirects]]
+  from = "/Commercial%20Cleaning.dc.html"
+  to = "/commercial-cleaning"
+  status = 301
+[[redirects]]
+  from = "/Commercial Cleaning.dc.html"
+  to = "/commercial-cleaning"
+  status = 301
+
+[[redirects]]
+  from = "/Mould%20and%20Damp%20Cleaning.dc.html"
+  to = "/mould-and-damp-cleaning"
+  status = 301
+[[redirects]]
+  from = "/Mould and Damp Cleaning.dc.html"
+  to = "/mould-and-damp-cleaning"
+  status = 301
+
+[[redirects]]
+  from = "/Exterior%20Cleaning.dc.html"
+  to = "/exterior-cleaning"
+  status = 301
+[[redirects]]
+  from = "/Exterior Cleaning.dc.html"
+  to = "/exterior-cleaning"
+  status = 301
+
+[[redirects]]
+  from = "/Student%20End%20of%20Tenancy%20Swansea.dc.html"
+  to = "/student-end-of-tenancy-swansea"
+  status = 301
+[[redirects]]
+  from = "/Student End of Tenancy Swansea.dc.html"
+  to = "/student-end-of-tenancy-swansea"
+  status = 301
+
+[[redirects]]
+  from = "/Regular%20Cleaning.dc.html"
+  to = "/regular-cleaning"
+  status = 301
+[[redirects]]
+  from = "/Regular Cleaning.dc.html"
+  to = "/regular-cleaning"
+  status = 301
+
+[[redirects]]
+  from = "/areas.dc"
+  to = "/areas"
+  status = 301
+
+[[redirects]]
+  from = "/Pinks%20Home%20Homepage.dc.html"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/Pinks Home Homepage.dc.html"
+  to = "/"
+  status = 301
