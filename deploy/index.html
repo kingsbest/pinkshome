@@ -180,9 +180,9 @@ input,select,textarea,button{font-family:inherit}
   <div style="max-width:1240px;margin:0 auto">
     <h2 style="margin:0 0 clamp(36px,5vw,60px);font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(32px,4.6vw,56px);line-height:1.08;text-align:center">What we <span style="display:inline-block;background:#F7A8A8;padding:0 .18em;border-radius:10px;transform:rotate(2deg)">clean</span></h2>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:24px">
-      <sc-for list="{{ services }}" as="sv" hint-placeholder-count="8">
+      <sc-for list="{{ services }}" as="sv" hint-placeholder-count="9">
         <a href="{{ sv.href }}" style="display:flex;flex-direction:column;background:#fff;border-radius:28px;overflow:hidden;text-decoration:none;color:#003A55;border:2px solid #003A55" style-hover="opacity:1;transform:translateY(-4px)">
-          <div style="aspect-ratio:4/3;width:100%;border-bottom:2px solid #003A55;position:relative;overflow:hidden;background:#F7A8A8"><img src="{{ sv.src }}" srcset="{{ sv.set }}" sizes="(max-width:640px) 90vw, 400px" width="{{ sv.w }}" height="{{ sv.h }}" alt="{{ sv.alt }}" loading="lazy" decoding="async" style="display:{{ sv.imgShow }};width:100%;height:100%;object-fit:cover;object-position:{{ sv.pos }}"><div style="display:{{ sv.iconShow }};position:absolute;left:0;top:0;right:0;bottom:0;align-items:center;justify-content:center"><svg width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="#003A55" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:{{ sv.ic1 }}"><rect x="4" y="3.5" width="13" height="5" rx="1"></rect><path d="M17 6h3v5h-9v3"></path><path d="M11 14v6.5"></path></svg><svg width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="#003A55" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:{{ sv.ic2 }}"><rect x="5" y="3" width="14" height="18" rx="1"></rect><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2M11 21v-3h2v3"></path></svg><svg width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="#003A55" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:{{ sv.ic3 }}"><path d="M3 11l9-7 9 7"></path><path d="M5 10v10h14V10"></path><path d="M10 20v-5h4v5"></path></svg></div></div>
+          <div style="aspect-ratio:4/3;width:100%;border-bottom:2px solid #003A55;position:relative;overflow:hidden;background:#F7A8A8"><img src="{{ sv.src }}" srcset="{{ sv.set }}" sizes="(max-width:640px) 90vw, 400px" width="{{ sv.w }}" height="{{ sv.h }}" alt="{{ sv.alt }}" loading="lazy" decoding="async" style="display:{{ sv.imgShow }};width:100%;height:100%;object-fit:cover;object-position:{{ sv.pos }}"><div style="display:{{ sv.iconShow }};position:absolute;left:0;top:0;right:0;bottom:0;align-items:center;justify-content:center"><svg width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="#003A55" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:{{ sv.ic1 }}"><rect x="4" y="3.5" width="13" height="5" rx="1"></rect><path d="M17 6h3v5h-9v3"></path><path d="M11 14v6.5"></path></svg><svg width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="#003A55" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:{{ sv.ic2 }}"><rect x="5" y="3" width="14" height="18" rx="1"></rect><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2M11 21v-3h2v3"></path></svg><svg width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="#003A55" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:{{ sv.ic3 }}"><path d="M3 11l9-7 9 7"></path><path d="M5 10v10h14V10"></path><path d="M10 20v-5h4v5"></path></svg><svg width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="#003A55" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:{{ sv.ic4 }}"><path d="M12 2v5"></path><path d="M5 14a7 7 0 0 1 14 0z"></path><path d="M3 14h18"></path><path d="M8 18l-1 2M12 18v3M16 18l1 2"></path></svg></div></div>
           <div style="padding:22px 24px 24px;display:flex;flex-direction:column;gap:8px;flex:1">
             <h3 style="margin:0;font-family:'Titan One',sans-serif;font-weight:400;text-transform:uppercase;font-size:21px;line-height:1.15">{{ sv.title }}</h3>
             <p style="margin:0;font-size:16px;text-wrap:pretty;flex:1">{{ sv.text }}</p>
@@ -462,19 +462,20 @@ class Component extends DCLogic {
       ['Do you clean holiday lets on changeover days?', 'Yes. We work around your booking calendar across Pembrokeshire and Carmarthenshire, including weekends.'],
       ['How do I pay?', 'By bank transfer or card after each clean. Regular customers can pay monthly. [CONFIRM PAYMENT OPTIONS]']
     ].map(([q, a], i) => ({ q, a, open: faq === i, sign: faq === i ? '–' : '+', bg: faq === i ? '#F7A8A8' : 'transparent', toggle: () => this.setState({ faq: faq === i ? -1 : i }) }));
-    const pages = { 'end-of-tenancy': 'End of Tenancy Cleaning.dc.html', 'after-builders': 'After Builders Cleaning.dc.html', 'mould-treatment': 'Mould and Damp Cleaning.dc.html' };
+    const pages = { 'end-of-tenancy': '/end-of-tenancy-cleaning', 'after-builders': '/after-builders-cleaning', 'deep-cleaning': '/deep-cleaning', 'commercial-cleaning': '/commercial-cleaning', 'mould-treatment': '/mould-and-damp-cleaning', 'holiday-let-changeovers': '/holiday-let-cleaning', 'regular-cleaning': '/regular-cleaning', 'exterior-cleaning': '/exterior-cleaning', 'high-dusting': '/commercial-cleaning#high-dusting' };
     const CARDS = {
       'deep-cleaning': ['toaster-after-kidwelly', 902, 1600, 451, '50% 52%', 'Toaster cleaned until shiny after a deep clean in Kidwelly'],
       'end-of-tenancy': ['oven-pontyates', 902, 1600, 451, '50% 100%', 'Double oven cleaned inside, with racks and door glass, in Pontyates'],
       'mould-treatment': ['fan-after-carmarthenshire', 1201, 1600, 600, '55% 60%', 'Extractor fan after cleaning in Carmarthenshire'],
       'holiday-let-changeovers': ['holiday-let-bedroom-burry-port', 902, 1600, 451, '50% 45%', 'Holiday let bedroom in Burry Port, made up for the next guests'],
+      'high-dusting': ['high-dusting-brechfa', 1600, 902, 800, '50% 40%', 'Timber roof beams after high dusting in Brechfa'],
       'exterior-cleaning': ['driveway-llanelli', 902, 1600, 451, '50% 8%', 'Tarmac driveway in Llanelli after jet washing']
     };
     const cardFor = slug => {
       const c = CARDS[slug];
-      const none = { ic1: 'none', ic2: 'none', ic3: 'none' };
+      const none = { ic1: 'none', ic2: 'none', ic3: 'none', ic4: 'none' };
       if (c) return { ...none, imgShow: 'block', iconShow: 'none', src: `assets/web/${c[0]}-1600.webp`, set: `assets/web/${c[0]}-800.webp ${c[3]}w, assets/web/${c[0]}-1600.webp ${c[1]}w`, w: c[1], h: c[2], pos: c[4], alt: c[5] };
-      return { ...none, imgShow: 'none', iconShow: 'flex', src: 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==', set: '', w: 1, h: 1, pos: '50% 50%', alt: '', ic1: slug === 'after-builders' ? 'block' : 'none', ic2: slug === 'commercial-cleaning' ? 'block' : 'none', ic3: slug === 'regular-cleaning' ? 'block' : 'none' };
+      return { ...none, imgShow: 'none', iconShow: 'flex', src: 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==', set: '', w: 1, h: 1, pos: '50% 50%', alt: '', ic1: slug === 'after-builders' ? 'block' : 'none', ic2: slug === 'commercial-cleaning' ? 'block' : 'none', ic3: slug === 'regular-cleaning' ? 'block' : 'none', ic4: slug === 'high-dusting' ? 'block' : 'none' };
     };
     const services = [
       ['end-of-tenancy', 'End of tenancy cleaning', 'To the letting-agent checklist, for tenants, landlords and students across Swansea and beyond.', 'End of tenancy cleaning'],
@@ -484,10 +485,11 @@ class Component extends DCLogic {
       ['mould-treatment', 'Mould & damp treatment', 'Black mould cleaned and treated, with advice on keeping it from coming back.', 'Mould treatment'],
       ['holiday-let-changeovers', 'Holiday let & Airbnb changeovers', 'Changeovers for coastal lets in Tenby, Saundersfoot and across Pembrokeshire.', 'Holiday let cleaning'],
       ['regular-cleaning', 'Regular home cleaning', 'Weekly or fortnightly cleans to keep on top of the everyday.', 'Regular cleaning'],
-      ['exterior-cleaning', 'Exterior, jet & soft washing', 'Driveways, patios, render and gutters cleared of grime, moss and algae.', 'Exterior cleaning']
+      ['exterior-cleaning', 'Exterior, jet & soft washing', 'Driveways, patios, render and gutters cleared of grime, moss and algae.', 'Exterior cleaning'],
+      ['high-dusting', 'High dusting & high-level cleaning', 'Pipework, light fittings, ducting and ledges cleared of dust, as a one-off or on a regular schedule.', 'High dusting']
     ].map(([slug, title, text, link]) => ({ href: pages[slug] || `services/${slug}.html`, id: `svc-${slug}`, photo: `${title} photo`, ...cardFor(slug), title, text, link }));
     const areas = ['Llanelli', 'Carmarthen', 'Swansea', 'Sketty', 'Llangennech', 'Burry Port', 'Tenby', 'Saundersfoot', 'Haverfordwest', 'Pembroke', 'Bridgend']
-      .map(name => ({ name, href: ({ llanelli: 'Area - Llanelli.dc.html', swansea: 'Area - Swansea.dc.html', carmarthen: 'Area - Carmarthen.dc.html', tenby: 'Area - Tenby.dc.html' })[name.toLowerCase()] || 'Areas.dc.html' }));
+      .map(name => ({ name, href: ({ llanelli: '/cleaners-llanelli', swansea: '/cleaners-swansea', carmarthen: '/cleaners-carmarthen', tenby: '/cleaners-tenby' })[name.toLowerCase()] || '/areas' }));
     return {
       isDesktop: w >= 960, isMobile: w < 960, menuVisible: w < 960 && menu,
       toggleMenu: () => this.setState({ menu: !menu }), closeMenu: () => this.setState({ menu: false }),
