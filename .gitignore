@@ -18,3 +18,7 @@ screenshots/
 /uploads/
 /.thumbnail
 /.thumbnail/
+
+# 9.4 MB design export, not deployed (local reference copy only)
+/design/Pinks Home Homepage.html
+Pinks Home Homepage.html
