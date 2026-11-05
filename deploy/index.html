@@ -453,7 +453,7 @@ class Component extends DCLogic {
         srcB: b.src, setB: b.set, wB: b.w, hB: b.h, altB: b.alt, posB: b.pos
       };
     });
-    const reviews = [['[REAL GOOGLE REVIEW]'], ['[REAL GOOGLE REVIEW]'], ['[REAL FACEBOOK REVIEW]']].map(([text]) => ({ text, who: '— Juliana Silva, Swansea' }));
+    const reviews = [['[REAL GOOGLE REVIEW]', '— [Name], [Town]'], ['[REAL GOOGLE REVIEW]', '— [Name], [Town]'], ['Pink’s Home, thank you guys for the amazing job your team have done for my AirBnB in Wales. I am glad to find you guys, wow’s I don’t need to travel back and forward again since you guys have started facilitating this service!', '— Philip Isibor, Airbnb host (Facebook review)']].map(([text, who]) => ({ text, who }));
     const faqs = [
       ['What’s the difference between a deep clean and a regular clean?', 'A deep clean is a longer first visit that gets into the places that build up over time, like limescale, oven fronts and skirting boards. After that, a regular 2-hour clean keeps it there.'],
       ['Do I have to be home?', 'No. Lots of our customers leave a key or a key-safe code. We’ll send you photos when we’re done.'],
