@@ -495,7 +495,7 @@ class Component extends DCLogic {
       ['high-dusting', 'High dusting & high-level cleaning', 'Pipework, light fittings, ducting and ledges cleared of dust, as a one-off or on a regular schedule.', 'High dusting']
     ].map(([slug, title, text, link]) => ({ href: pages[slug] || `services/${slug}.html`, id: `svc-${slug}`, photo: `${title} photo`, ...cardFor(slug), title, text, link }));
     const areas = ['Llanelli', 'Carmarthen', 'Swansea', 'Sketty', 'Llangennech', 'Burry Port', 'Tenby', 'Saundersfoot', 'Haverfordwest', 'Pembroke', 'Bridgend']
-      .map(name => ({ name, href: ({ llanelli: '/cleaners-llanelli', swansea: '/cleaners-swansea', carmarthen: '/cleaners-carmarthen', tenby: '/cleaners-tenby', llangennech: '/cleaners-llangennech', 'burry port': '/cleaners-burry-port' })[name.toLowerCase()] || '/areas' }));
+      .map(name => ({ name, href: ({ llanelli: '/cleaners-llanelli', swansea: '/cleaners-swansea', carmarthen: '/cleaners-carmarthen', tenby: '/cleaners-tenby', llangennech: '/cleaners-llangennech', 'burry port': '/cleaners-burry-port', sketty: '/cleaners-sketty', bridgend: '/cleaners-bridgend' })[name.toLowerCase()] || '/areas' }));
     return {
       isDesktop: w >= 960, isMobile: w < 960, menuVisible: w < 960 && menu,
       toggleMenu: () => this.setState({ menu: !menu }), closeMenu: () => this.setState({ menu: false }),
