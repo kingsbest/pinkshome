@@ -448,7 +448,7 @@ class Component extends DCLogic {
       ['Will it be the same cleaner each time?', 'We keep the same person on your home whenever we can. If they’re off sick or on holiday, we’ll ask before sending someone else.'],
       ['Do you bring your own products?', 'Yes. We bring everything, and our standard products are non-toxic and safe around children and pets. If you’d rather we used yours, just say.'],
       ['Do you clean holiday lets on changeover days?', 'Yes. We work around your booking calendar across Pembrokeshire and Carmarthenshire, including weekends.'],
-      ['How do I pay?', 'By bank transfer or card after each clean. Regular customers can pay monthly. [CONFIRM PAYMENT OPTIONS]']
+      ['How do I pay?', 'By bank transfer, card or cash after each clean. Regular customers can pay monthly.']
     ].map(([q, a], i) => ({ q, a, open: faq === i, sign: faq === i ? '–' : '+', bg: faq === i ? '#F7A8A8' : 'transparent', toggle: () => this.setState({ faq: faq === i ? -1 : i }) }));
     const pages = { 'end-of-tenancy': 'End of Tenancy Cleaning.dc.html', 'after-builders': 'After Builders Cleaning.dc.html', 'mould-treatment': 'Mould and Damp Cleaning.dc.html' };
     const CARDS = {
