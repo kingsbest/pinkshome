@@ -41,6 +41,10 @@ input,select,textarea,button{font-family:inherit}
   .hero-ctas{flex-direction:column!important;gap:12px!important}
   .hero-btn{width:100%!important}
 }
+@media (max-width:767px){
+  .hero-video{object-fit:cover!important;object-position:8% 100%!important}
+  .hero-shade{background:linear-gradient(to bottom,rgba(0,40,60,.45) 0%,rgba(0,40,60,.3) 60%,rgba(0,40,60,.15) 100%)}
+}
 </style>
 </helmet>
 
@@ -98,8 +102,8 @@ input,select,textarea,button{font-family:inherit}
 
 <!-- HERO -->
 <section data-screen-label="Hero" style="position:relative;min-height:min(88vh,820px);display:flex;align-items:center;overflow:hidden;background:#003A55">
-  <video ref="{{ videoRef }}" src="uploads/hero.mp4" poster="uploads/hero-poster.webp" preload="auto" autoPlay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>
-  <div style="position: absolute; inset: 0"></div>
+  <video class="hero-video" ref="{{ videoRef }}" poster="uploads/hero-poster.webp" preload="none" autoPlay="{{ true }}" muted="{{ true }}" loop="{{ true }}" playsInline="{{ true }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>
+  <div class="hero-shade" style="position: absolute; inset: 0"></div>
   <div style="position:relative;max-width:1320px;width:100%;margin:0 auto;padding:clamp(56px,9vw,120px) clamp(20px,4vw,48px)">
     <div style="max-width:780px;color:#F0E8DF">
       <p style="margin:0 0 18px;font-family:'Titan One',sans-serif;font-size:20px;color:#F7A8A8;letter-spacing:.04em">Croeso! South-West Wales</p>
@@ -424,11 +428,13 @@ class Component extends DCLogic {
   state = { w: typeof window !== 'undefined' ? window.innerWidth : 1280, menu: false, cat: 'homes', job: 0, rev: 0, faq: 0, sent: false };
   videoRef = React.createRef();
   componentDidMount() {
-    this.onResize = () => this.setState({ w: window.innerWidth });
+    this.loadVideo = () => { const el = this.videoRef.current; if (!el || el.getAttribute('src') || window.innerWidth < 768) return false; el.preload = 'auto'; el.src = 'uploads/hero.mp4'; el.load(); return true; };
+    this.onResize = () => { this.setState({ w: window.innerWidth }); if (this.loadVideo()) this.tryPlay(); };
     window.addEventListener('resize', this.onResize);
     const v = this.videoRef.current;
     this.tryPlay = () => { const el = this.videoRef.current; if (!el || !el.paused) return; el.muted = true; el.defaultMuted = true; el.setAttribute('muted', ''); const p = el.play(); if (p && p.catch) p.catch(() => {}); };
     if (v) { v.setAttribute('muted', ''); v.muted = true; ['loadeddata', 'canplay'].forEach(ev => v.addEventListener(ev, this.tryPlay)); }
+    this.loadVideo();
     this.tryPlay();
     this.retry = setTimeout(this.tryPlay, 600);
     ['pointerdown', 'scroll', 'keydown', 'touchstart'].forEach(ev => window.addEventListener(ev, this.tryPlay, { once: true, passive: true }));
